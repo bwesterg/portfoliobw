@@ -1,0 +1,13 @@
+.hero-image {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-left: 30px;
+  border-radius: 150px;
+}
+
+.hero-image img {
+  width: 310px;
+  height: auto;
+  margin: -9px 0 0 0px;
+}
