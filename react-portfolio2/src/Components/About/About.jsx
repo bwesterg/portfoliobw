@@ -5,7 +5,7 @@ import BW_profile from "../../assets/BW_profile.jpg"
 
 const About = () => {
   return (
-    <div className='about'>
+    <div id="about" className='about'>
       <div className="about-title">
         <h2>About me</h2>
         <img src={theme_pattern} alt=""/>
