@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import BW_profile from "../../assets/BW_profile.jpg"
+import BW_profile from "../../assets/BW_profile.jpg";
 
 const Hero = () => {
   return (
@@ -8,8 +8,14 @@ const Hero = () => {
       <div className="hero-image">
         <img src={BW_profile} />
       </div>
-      <h1>Benton Westergaard, a fullstack developer based in Boulder, Colorado</h1>
-      <p>some text</p>
+      <h1>
+        <span>
+          Benton Westergaard<br /> 
+        </span>
+      </h1>
+        <p>
+          Full Stack Developer in Boulder, Colorado
+        </p>
       <div className="hero-action">
         <div className="hero-connect">
           Connect with me
