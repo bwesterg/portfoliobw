@@ -11,57 +11,65 @@ import RitcheyTags from '../assets/RitcheyTags.png'
 import EssentialElectric from '../assets/EssentialElectric.png'
 import CockPunchCoffee from '../assets/CockPunchCoffee.png'
 import AVH from '../assets/AspenValleyHospital.png'
+import ListenUp from '../assets/ListenUp.png'
 
 const mywork_data = [
-    {
-        w_no:1,
-        w_name:"Web design",
-        w_img:FirstDescents,
-        w_url:"https://firstdescents.org/",
-        w_title:"First Descents"
-    },
-    {
-        w_no:2,
-        w_name:"Web design",
-        w_img:Chair6,
-        w_url:"https://chair6collective.com/",
-        w_title:"Chair 6 Collective"
-        
-    },
-    {
-        w_no:3,
-        w_name:"Web design",
-        w_img:GoSnowmass,
-        w_url:"https://www.gosnowmass.com/",
-        w_title:"Go Snowmass"
-    },
-    {
-        w_no:4,
-        w_name:"Web design",
-        w_img:RitcheyTags,
-        w_url:"https://ritcheytags.com/",
-        w_title:"Ritchey Tags"
-    },
-    {
-        w_no:5,
-        w_name:"Web design",
-        w_img:EssentialElectric,
-        w_url:"https://essentialparts.com/",
-        w_title:"Essential Electric"
-    },
-    {
-        w_no:6,
-        w_name:"Web design",
-        w_img:CockPunchCoffee,
-        w_url:"https://cockpunchcoffee.com/",
-        w_title:"Cock Punch Coffee"
-    },
-    {
-      w_no:7,
+  {
+      w_no:1,
       w_name:"Web design",
-      w_img:AVH,
-      w_url:"https://www.aspenhospital.org/",
-      w_title:"Aspen Valley Hospital"
+      w_img:FirstDescents,
+      w_url:"https://firstdescents.org/",
+      w_title:"First Descents"
+  },
+  {
+      w_no:2,
+      w_name:"Web design",
+      w_img:Chair6,
+      w_url:"https://chair6collective.com/",
+      w_title:"Chair 6 Collective"
+      
+  },
+  {
+      w_no:3,
+      w_name:"Web design",
+      w_img:GoSnowmass,
+      w_url:"https://www.gosnowmass.com/",
+      w_title:"Go Snowmass"
+  },
+  {
+      w_no:4,
+      w_name:"Web design",
+      w_img:RitcheyTags,
+      w_url:"https://ritcheytags.com/",
+      w_title:"Ritchey Tags"
+  },
+  {
+      w_no:5,
+      w_name:"Web design",
+      w_img:EssentialElectric,
+      w_url:"https://essentialparts.com/",
+      w_title:"Essential Electric"
+  },
+  {
+      w_no:6,
+      w_name:"Web design",
+      w_img:CockPunchCoffee,
+      w_url:"https://cockpunchcoffee.com/",
+      w_title:"Cock Punch Coffee"
+  },
+  {
+    w_no:7,
+    w_name:"Web design",
+    w_img:AVH,
+    w_url:"https://www.aspenhospital.org/",
+    w_title:"Aspen Valley Hospital"
+  },
+  {
+    w_no:8,
+    w_name:"Web design",
+    w_img:ListenUp,
+    w_url:"https://listenup.com/",
+    w_title:"ListenUp Audio"
   },
 ]
  

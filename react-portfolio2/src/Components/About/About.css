@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
-  margin: 80px 170px;
+  margin: 80px 140px;
 }
 
 @media(max-width: 768px){
@@ -134,7 +134,8 @@
 
 
 .about-skills {
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: column;
   gap: 20px;
 }
