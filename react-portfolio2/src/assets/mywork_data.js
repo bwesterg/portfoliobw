@@ -1,9 +1,3 @@
-import project1_img from '../assets/project_1.svg'
-import project2_img from '../assets/project_2.svg'
-import project3_img from '../assets/project_3.svg'
-import project4_img from '../assets/project_4.svg'
-import project5_img from '../assets/project_5.svg'
-import project6_img from '../assets/project_6.svg'
 import FirstDescents from '../assets/FirstDescents.png'
 import Chair6 from '../assets/Chair6.png'
 import GoSnowmass from '../assets/GoSnowmass.png'
@@ -12,6 +6,11 @@ import EssentialElectric from '../assets/EssentialElectric.png'
 import CockPunchCoffee from '../assets/CockPunchCoffee.png'
 import AVH from '../assets/AspenValleyHospital.png'
 import ListenUp from '../assets/ListenUp.png'
+import AtticusPoetCoffee from '../assets/AtticusPoetCoffee.png'
+import Careerwise from '../assets/Careerwise.png'
+import SouthernChamption from '../assets/SouthernChampion.png'
+import StokeBroker from '../assets/StokeBroker.png'
+import Optera from '../assets/Optera.png'
 
 const mywork_data = [
   {
@@ -70,6 +69,41 @@ const mywork_data = [
     w_img:ListenUp,
     w_url:"https://listenup.com/",
     w_title:"ListenUp Audio"
+  },
+  {
+    w_no:9,
+    w_name:"Web design",
+    w_img:AtticusPoetCoffee,
+    w_url:"https://listenup.com/",
+    w_title:"Atticus Poetry Coffee"
+  },
+  {
+    w_no:10,
+    w_name:"Web design",
+    w_img:Careerwise,
+    w_url:"https://www.careerwisecolorado.org/",
+    w_title:"Careerwise"
+  },
+  {
+    w_no:11,
+    w_name:"Web design",
+    w_img:SouthernChamption,
+    w_url:"https://southern-champion.com/",
+    w_title:"Southern Champion"
+  },
+  {
+    w_no:12,
+    w_name:"Web design",
+    w_img:StokeBroker,
+    w_url:"https://www.stokebroker.com/",
+    w_title:"Stoke Broker"
+  },
+  {
+    w_no:13,
+    w_name:"Web design",
+    w_img:Optera,
+    w_url:"https://opteraclimate.com/",
+    w_title:"Optera"
   },
 ]
  

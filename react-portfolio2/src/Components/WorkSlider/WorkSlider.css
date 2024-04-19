@@ -7,6 +7,7 @@
   justify-content: center;
   gap: 80px;
   /* margin: 80px 140px; */
+  z-index: -1;
 }
 
 .mywork-title {
@@ -28,7 +29,7 @@
 }
 
 .slide-container {
-  margin: 20px 40px 200px 20px;
+  margin: 20px 70px 200px 70px;
 }
 
 /* @media(max-width:1024px){
@@ -52,24 +53,30 @@
   height: 230px;
   /* width: auto; */
   position: relative;
-  right: 30px;
-  opacity: 1;
+  right: 50px;
+  opacity: .7;
   
 }
 .work-thumbnail-box img:hover {
   transform: scale(1.10);
   transition: 0.3s;
-  opacity: .3;
-  filter: blur(3px);
+  opacity: 1;
+  /* filter: blur(1px); */
 }
 
 .work-thumbnail-box:hover {
   /* border-bottom: 2px solid #ff00ff; */
-  transform: scale(1.10);
+  transform: scale(1.05);
   transition: 0.3s;
-  /* border-radius: 10px; */
+  
 }
 
+.work-thumbnail-box img:hover {
+  /* border-radius: 10px; */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4c4c4c+0,595959+0,474747+23,2c2c2c+40,000000+64,1c1c1c+91,111111+100,2b2b2b+100,131313+100,111111+100,2b2b2b+101 */
+  background: linear-gradient(to bottom,  #4c4c4c 0%,#595959 0%,#474747 23%,#2c2c2c 40%,#000000 64%,#1c1c1c 91%,#111111 100%,#2b2b2b 100%,#131313 100%,#111111 100%,#2b2b2b 101%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
 
 /* h3.project-title {
   display: none;
@@ -80,8 +87,8 @@ h3.project-title {
   opacity: 0;
   position: relative;
   z-index: 100;
-  top: 50px;
-  left: 20px;
+  top: 0px;
+  left: 0px;
   color: white;
   z-index: 999999999;
   font-size: 20px;
@@ -91,14 +98,57 @@ h3.project-title {
 }
 
 
-.work-thumbnail-box:hover h3 {
+.thumbnail-and-caption:hover h3 {
   opacity: 1;
-  padding-top: 10px;
-  padding-left: 10px;
-  transition: 0.4s;
+  /* padding-top: 50px;
+  padding-left: 50px;
+  transition: 0.4s; */
 }
 
 .work-thumbnail-box a {
   text-decoration: none;
 }
 
+/* new tests */
+.highlight-caption {
+  height: 30px;
+  position: relative;
+  z-index: 999999999;
+  /* background-color: blue; */
+  text-decoration: none;
+}
+
+.highlight-caption a {
+  color: white;
+  text-decoration: none !important;
+}
+
+
+.highlight-caption h3 {
+  color: #FFFFFF;
+  padding-bottom: 10px;
+}
+.highlight-caption h3:hover {
+  background: linear-gradient(270deg, #DF8908 40%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.slick-dots li button::before  {
+  color: white;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+}
+
+ul.slick-dots {
+  margin-top: -5px;
+  position: relative;
+}
+
+.slick-next {
+  right: 2px;
+}
