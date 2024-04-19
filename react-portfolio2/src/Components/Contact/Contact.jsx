@@ -41,8 +41,8 @@ const Contact = () => {
       </div>
       <div className="contact-section">
         <div className="contact-left">
-          <h2>Talk to Me</h2>
-          <p>I am currently looking for new roles, so let me know if you have any opportunities.</p>
+          <h2>Let's Talk</h2>
+          <p>I'm always looking for new challenges, and would love to talk about a new project.</p>
           <div className="contact-details">
             <div className="contact-detail">
               <img src={mail_icon} alt="" />
