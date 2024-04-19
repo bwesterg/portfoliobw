@@ -1,0 +1,31 @@
+.slide-container {
+  margin: 20px 40px;
+}
+
+.work-thumbnail-box {
+  height: 200px;
+  overflow: hidden;
+  width: 350px !important;
+}
+
+.work-thumbnail-box img {
+  height: 230px;
+  width: auto;
+  position: relative;
+  right: 20px;
+}
+.work-thumbnail-box img:hover {
+  height: 230px;
+  width: auto;
+  transform: scale(1.10);
+  transition: 0.3s;
+}
+
+.work-thumbnail-box:hover {
+  /* border-bottom: 2px solid #ff00ff; */
+  transform: scale(1.10);
+  transition: 0.3s;
+}
+
+
+
