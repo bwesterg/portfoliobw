@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Slider from "react-slick"; 
 import them_pattern from '../../assets/theme_pattern.svg';
 import arrow_icon from '../../assets/arrow_icon.svg';
+import Atticus from '../../assets/AtticusPoetCoffee.png';
 
 
 import "slick-carousel/slick/slick.css";
@@ -25,8 +26,8 @@ function Arrow(props) {
 
 const WorkSlider = () => {
   var settings = {
-    centerPadding: '10px',
-    centerMode: true,
+    // centerPadding: '10px',
+    // centerMode: true,
     dots: true,
     infinite: true,
     speed: 500,
@@ -34,19 +35,19 @@ const WorkSlider = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     // autoplay: true,
-    // autoplaySpeed: 2000,
+    // autoplaySpeed: 2250,
     responsive: [
-      // {
-      //   breakpoint: 1200,
-      //   settings: {
-      //     slidesToShow: 4,
-      //     // centerPadding: '100px',
-      //     // centerMode: true,
-      //     slidesToScroll: 1,
-      //     infinite: true,
-      //     dots: true
-      //   }
-      // },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          // centerPadding: '100px',
+          // centerMode: true,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -77,8 +78,8 @@ const WorkSlider = () => {
 
   };
   return (
-    <div>
-      <div id="portfolio" className='mywork'>
+    <div className="my-portfolio" id="portfolio">
+      <div className='mywork'>
         <div className="mywork-title">
           <h2>Professional Work</h2>
           <img src={them_pattern} alt="" />
@@ -88,11 +89,17 @@ const WorkSlider = () => {
         <Slider {...settings}>
           {mywork_data.map((work,index)=>{
               return ( 
-                <div className="work-thumbnail-box" key={index}>
+                <div className="thumbnail-and-caption" id="boxy">
+                  <div className="highlight-caption"> 
                   <a href={work.w_url} target="_blank">
-                  <h3 className="project-title">{work.w_title}</h3>
-                    <img key={index} src={work.w_img} alt=""/>
+                    <h3 className="project-title">{work.w_title}</h3>
                   </a>
+                  </div>
+                  <div className="work-thumbnail-box" key={index}>
+                    <a href={work.w_url} target="_blank">
+                      <img key={index} src={work.w_img} alt=""/>
+                    </a>
+                  </div>
                 </div>
               )
             })}
