@@ -41,8 +41,8 @@ const Contact = () => {
       </div>
       <div className="contact-section">
         <div className="contact-left">
-          <h2>Let's Talk</h2>
-          <p>I'm always looking for new challenges, and would love to talk about a new project.</p>
+          <h2>Get in Touch</h2>
+          <h4>I'm always looking for new challenges, and would love to talk about a new project.</h4>
           <div className="contact-details">
             <div className="contact-detail">
               <img src={mail_icon} alt="" />

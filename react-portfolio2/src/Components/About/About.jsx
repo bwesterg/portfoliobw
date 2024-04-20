@@ -6,20 +6,20 @@ import BW_profile from "../../assets/BW_profile.jpg"
 const About = () => {
   return (
     <div id="about" className='about'>
-      <div className="about-title">
+      {/* <div className="about-title">
         <h2>About me</h2>
         <img src={theme_pattern} alt=""/>
-      </div>
+      </div> */}
       <div className='about-sections'>
-        <div className="about-left">
+        {/* <div className="about-left">
           <div className="about-image">
             <img src={BW_profile} alt=""/>
           </div>
-        </div>
+        </div> */}
         <div className="about-right">
           <div className="about-para">
-            <p>Experienced Developer with background in higher education, pharmacy, and public health.</p>
-            <p>Some text some text some text some text some text some text some text some text</p>
+            <p>Experienced Full Stack Developer with additional background in continuing education project management, healthcare research, public health surveillance, and exercise physiology.</p>
+            <p>Seeking opportunities to build cool stuff.</p>
           </div>
           <div className="about-skills">
             <div className="about-skill">

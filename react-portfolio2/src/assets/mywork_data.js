@@ -54,7 +54,7 @@ const mywork_data = [
       w_name:"Web design",
       w_img:CockPunchCoffee,
       w_url:"https://cockpunchcoffee.com/",
-      w_title:"Cock Punch Coffee"
+      w_title:"Cockpunch Coffee"
   },
   {
     w_no:7,

@@ -7,6 +7,16 @@
   margin: 80px 140px;
 }
 
+@media(max-width: 613px){
+  #about.about {
+    margin-top: 90px;
+  }
+
+  .about-sections-2 {
+    margin-top: -30px;
+  }
+}
+
 @media(max-width: 768px){
   .about {
     gap: 80px;
@@ -25,6 +35,13 @@
     padding: 0 !important;
   }
 }
+
+@media(max-width: 500px){
+  .about-para p {
+    font-size: 16px;
+  }
+}
+
 
 .about-title h2 {
   padding: 0px 30px;
@@ -71,7 +88,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
 }
 
@@ -179,6 +196,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   gap: 10px;
   transition: 0.5s;
 }
