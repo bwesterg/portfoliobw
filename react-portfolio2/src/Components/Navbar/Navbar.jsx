@@ -20,7 +20,7 @@ function Navbar() {
   }
 
   return (
-    <div className='navbar'>
+    <div className='navbar sticky'>
       {/* <img src={logo} alt="logo" /> */}
        <img src={menu_open} onClick={open_menu} alt="menu_open logo" className="nav-mobile-open" />
       <ul ref={menuReference} className='nav-menu'>
@@ -31,7 +31,7 @@ function Navbar() {
           </AnchorLink>
           {menu==="home"? <img src={underline} alt=""/>:<></>}
         </li>
-        <li>
+        {/* <li>
           <AnchorLink className='anchor-link' offset={50} href='#about'>      
            <p onClick={()=>setMenu("about")}>About</p>
           </AnchorLink>
@@ -42,7 +42,7 @@ function Navbar() {
             <p onClick={()=>setMenu("services")}>Services</p>
           </AnchorLink>
           {menu==="services"? <img src={underline} alt=""/>:<></>}
-        </li>
+        </li> */}
         <li>
           <AnchorLink className='anchor-link' offset={50} href='#portfolio'>
             <p onClick={()=>setMenu("portfolio")}>Portfolio</p>
@@ -56,9 +56,9 @@ function Navbar() {
           {menu==="contact"? <img src={underline} alt=""/>:<></>}
         </li>
       </ul>
-      <AnchorLink className='anchor-link' offset={50} href='#contact'>
+      {/* <AnchorLink className='anchor-link' offset={50} href='#contact'>
         <div className='nav-connect'>Connect with Me</div>
-      </AnchorLink>
+      </AnchorLink> */}
     </div>
   )
 }

@@ -2,8 +2,20 @@ import React from 'react';
 import './Hero.css';
 import BW_profile from "../../assets/BW_profile.jpg";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import BW_Resume from "../../assets/Benton_Westergaard_Resume_2024.pdf";
 
 const Hero = () => {
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = BW_Resume;
+    const filename = BW_Resume.split('/').pop();
+    link.setAttribute('download', filename);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div id="home" className='hero'>
       <div className="image-and-name">
@@ -25,7 +37,7 @@ const Hero = () => {
               Connect with me
             </AnchorLink>
             </div>
-            <div className="hero-resume">My resume</div>
+            <div className="hero-resume" onClick={handleDownload}>My resume</div>
 
           </div>
         </div>
@@ -34,4 +46,8 @@ const Hero = () => {
   )
 }
 
-export default Hero
+
+
+
+
+export default Hero;

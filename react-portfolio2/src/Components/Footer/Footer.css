@@ -5,6 +5,22 @@
   gap: 30px;
 }
 
+.footer .footer-top-left {
+  position: relative;
+}
+
+.footer .footer-top-left img {
+  position: absolute;
+  z-index: -10;
+  top: -20px;
+  left: 170px;
+}
+
+.footer .footer-top-left p {
+  font-size: 40px;
+  font-weight: 500;
+}
+
 .footer-top {
   display: flex;
   justify-content: space-between;

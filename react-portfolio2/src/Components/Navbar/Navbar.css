@@ -96,3 +96,14 @@
     gap: 20px;
   }
 }
+
+.navbar {
+  overflow: hidden;
+  background-color: blue;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
