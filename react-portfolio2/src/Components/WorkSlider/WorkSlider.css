@@ -18,6 +18,7 @@
   padding: 0px 15px;
   font-size: 40px;
   font-weight: 600;
+  
 }
 
 .mywork-title img {
@@ -29,7 +30,7 @@
 }
 
 .slide-container {
-  margin: 20px 70px 200px 70px;
+  margin: 20px 70px 200px 90px;
 }
 
 /* @media(max-width:1024px){
@@ -125,11 +126,14 @@ h3.project-title {
 
 
 .highlight-caption h3 {
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
   padding-bottom: 10px;
+  /* background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }
 .highlight-caption h3:hover {
-  background: linear-gradient(270deg, #DF8908 40%, #B415FF 100%);
+  background: linear-gradient(270deg, #DF8908 60%, #B415FF 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

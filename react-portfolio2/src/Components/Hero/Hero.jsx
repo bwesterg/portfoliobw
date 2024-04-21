@@ -4,6 +4,13 @@ import BW_profile from "../../assets/BW_profile.jpg";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import BW_Resume from "../../assets/Benton_Westergaard_Resume_2024.pdf";
 
+
+import linkedIn from '../../assets/linkedIn_logo.svg';
+import gitHub from '../../assets/gitHub_logo.svg';
+
+
+
+
 const Hero = () => {
 
   const handleDownload = () => {
@@ -38,8 +45,15 @@ const Hero = () => {
             </AnchorLink>
             </div>
             <div className="hero-resume" onClick={handleDownload}>My resume</div>
-
           </div>
+            <div className="connect-box">
+              <div className="linked-in">
+                <img src={linkedIn} alt="linkedIn logo" />
+              </div>
+              <div className="gitHub">
+                <img src={gitHub} alt="gitHub logo" />
+              </div>
+            </div>
         </div>
       </div>
     </div>

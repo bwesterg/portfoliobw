@@ -31,7 +31,7 @@ const WorkSlider = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     initialSlide: 0,
     // autoplay: true,
@@ -40,7 +40,7 @@ const WorkSlider = () => {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           // centerPadding: '100px',
           // centerMode: true,
           slidesToScroll: 1,
@@ -89,7 +89,7 @@ const WorkSlider = () => {
         <Slider {...settings}>
           {mywork_data.map((work,index)=>{
               return ( 
-                <div className="thumbnail-and-caption" id="boxy">
+                <div className="thumbnail-and-caption" id="boxy" key={index}>
                   <div className="highlight-caption"> 
                   <a href={work.w_url} target="_blank">
                     <h3 className="project-title">{work.w_title}</h3>
