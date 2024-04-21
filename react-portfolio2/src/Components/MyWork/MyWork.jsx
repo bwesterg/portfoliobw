@@ -14,7 +14,7 @@ const MyWork = () => {
       <div className="mywork-container">
         {mywork_data.map((work,index)=>{
           return ( 
-            <div className="work-thumbnail-box">
+            <div className="work-thumbnail-box" key={index} >
               <p className='work-title'>{work.w_title}</p>
               <a href={work.w_url} target="_blank">
                 <img key={index} src={work.w_img} alt=""/>

@@ -24,9 +24,9 @@ const Footer = () => {
       <div className="footer-bottom">
         <p className='footer-bottom-left'>© 2024 Benton Westergaard. All rights reserved.</p>
         <div className="footer-bottom-right">
-          <p>Terms of Service</p>
+          {/* <p>80px 140px</p>
           <p>Privacy Policy</p>
-          <p>Connect with Me</p>
+          <p>Connect with Me</p> */}
         </div>
       </div>
     </div>
