@@ -5,7 +5,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import BW_Resume from "../../assets/Benton_Westergaard_Resume_2024.pdf";
 
 import linkedIn from '../../assets/linkedIn_logo.svg';
-import gitHub from '../../assets/gitHub_logo.svg';
+import gitHub from '../../assets/github-mark/github-mark-white.png';
 
 
 
@@ -45,14 +45,14 @@ const Hero = () => {
             </div>
             <div className="hero-resume" onClick={handleDownload}>My resume</div>
           </div>
-            <div className="connect-box">
+            {/* <div className="connect-box">
               <div className="linked-in">
                 <img src={linkedIn} alt="linkedIn logo" />
               </div>
               <div className="gitHub">
                 <img src={gitHub} alt="gitHub logo" />
               </div>
-            </div>
+            </div> */}
         </div>
       </div>
     </div>

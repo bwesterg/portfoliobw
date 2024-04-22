@@ -200,6 +200,7 @@
 }
 
 /* @media(max-width: 768px){
+
   .hero-image img {
     margin-bottom: 120px;
     width: 400px;
@@ -237,3 +238,17 @@
     border-radius: 40px;
   }
 } */
+
+
+.connect-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 20px;
+}
+
+
+.gitHub img{
+  height: 36px !important;
+}

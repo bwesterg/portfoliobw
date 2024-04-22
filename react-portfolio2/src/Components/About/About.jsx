@@ -2,42 +2,45 @@ import React from 'react';
 import './About.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
 import BW_profile from "../../assets/BW_profile.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHtml5, faCss3, faReact, faJsSquare, faNpm, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import node from '../../assets/node.svg';
+import npm from '../../assets/npm.svg';
 
 const About = () => {
   return (
     <div id="about" className='about'>
-      {/* <div className="about-title">
+      <div className="about-title">
         <h2>About me</h2>
         <img src={theme_pattern} alt=""/>
-      </div> */}
+      </div>
+      <div className="about-para">
+        <p>Experienced Full Stack Developer with additional background in continuing education project management, healthcare research, public health surveillance, and exercise physiology.</p>
+        <p>Seeking opportunities to build cool stuff.</p>
+      </div>
       <div className='about-sections'>
-        {/* <div className="about-left">
-          <div className="about-image">
-            <img src={BW_profile} alt=""/>
-          </div>
-        </div> */}
-        <div className="about-right">
-          <div className="about-para">
-            <p>Experienced Full Stack Developer with additional background in continuing education project management, healthcare research, public health surveillance, and exercise physiology.</p>
-            <p>Seeking opportunities to build cool stuff.</p>
-          </div>
-          <div className="about-skills">
-            <div className="about-skill">
-              <p>HTML & CSS</p><hr style={{width: "50%"}} />
+        <div className="about-graphic">
+          <div className="stage-cube-cont">
+            <div className="cubespinner">
+              <div className="face1">
+                <FontAwesomeIcon icon={faHtml5} color="#DD0031" />
+              </div>
+              <div className="face2">
+                <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+              </div>
+              <div className="face3">
+                <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+              </div>
+              <div className="face4">
+                <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+              </div>
+              <div className="face5">
+                <FontAwesomeIcon icon={faNpm} color="orange" width="85%"/>
+              </div>
+              <div className="face6">
+                <FontAwesomeIcon icon={faNodeJs} color="green"/>
+              </div>
             </div>
-            <div className="about-skill">
-              <p>React</p><hr style={{width: "70%"}} />
-            </div>
-            <div className="about-skill">
-              <p>JavaScript</p><hr style={{width: "60%"}} />
-            </div>
-            <div className="about-skill">
-              <p>Ruby on Rails</p><hr style={{width: "50%"}} />              
-            </div>
-            <div className="about-skill">
-              <p>Node</p><hr style={{width: "50%"}} />              
-            </div>
-            
           </div>
         </div>
       </div>

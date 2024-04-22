@@ -6,6 +6,10 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg';
 import menu_close from '../../assets/menu_close.svg';
 
+import linkedIn from '../../assets/linkedIn_logo.svg';
+import gitHub from '../../assets/github-mark/github-mark-white.png';
+
+
 function Navbar() {
 
   const [menu, setMenu] = useState("home");
@@ -32,17 +36,17 @@ function Navbar() {
           {menu==="home"? <img src={underline} alt=""/>:<></>}
         </li>
         {/* <li>
-          <AnchorLink className='anchor-link' offset={50} href='#about'>      
-           <p onClick={()=>setMenu("about")}>About</p>
-          </AnchorLink>
-          {menu==="about"? <img src={underline} alt=""/>:<></>}
-        </li>
-        <li>
           <AnchorLink className='anchor-link' offset={50} href='#services'>
             <p onClick={()=>setMenu("services")}>Services</p>
           </AnchorLink>
           {menu==="services"? <img src={underline} alt=""/>:<></>}
         </li> */}
+        <li>
+          <AnchorLink className='anchor-link' offset={50} href='#about'>      
+           <p onClick={()=>setMenu("about")}>About</p>
+          </AnchorLink>
+          {menu==="about"? <img src={underline} alt=""/>:<></>}
+        </li>
         <li>
           <AnchorLink className='anchor-link' offset={50} href='#portfolio'>
             <p onClick={()=>setMenu("portfolio")}>Portfolio</p>
@@ -55,6 +59,21 @@ function Navbar() {
           </AnchorLink>
           {menu==="contact"? <img src={underline} alt=""/>:<></>}
         </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/benton-westergaard/">
+            <div className="linked-in">
+              <img src={linkedIn} alt="linkedIn logo" />
+            </div>
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://github.com/bwesterg">
+            <div className="gitHub">
+              <img src={gitHub} alt="gitHub logo" />
+            </div>
+          </a>
+        </li>
+
       </ul>
       {/* <AnchorLink className='anchor-link' offset={50} href='#contact'>
         <div className='nav-connect'>Connect with Me</div>
