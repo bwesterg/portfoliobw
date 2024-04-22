@@ -4,7 +4,6 @@ import BW_profile from "../../assets/BW_profile.jpg";
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import BW_Resume from "../../assets/Benton_Westergaard_Resume_2024.pdf";
 
-
 import linkedIn from '../../assets/linkedIn_logo.svg';
 import gitHub from '../../assets/gitHub_logo.svg';
 
