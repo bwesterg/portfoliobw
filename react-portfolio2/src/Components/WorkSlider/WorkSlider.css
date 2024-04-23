@@ -18,7 +18,12 @@
   padding: 0px 15px;
   font-size: 40px;
   font-weight: 600;
-  
+}
+
+@media(max-width: 600px){
+  .mywork-title h2 {
+    font-size: 35px !important;
+  }
 }
 
 .mywork-title img {
@@ -30,7 +35,7 @@
 }
 
 .slide-container {
-  margin: 20px 70px 200px 90px;
+  margin: 20px 70px 200px 70px;
 }
 
 /* @media(max-width:1024px){
@@ -41,10 +46,22 @@
 } */
 
 .work-thumbnail-box {
-  height: 220px;
+  height: calc(20vw + 10px);
   overflow: hidden !important;
-  width: 90% !important;
+  width: 100% !important;
   /* border-radius: 10px; */
+}
+
+@media(max-width: 600px){
+  .work-thumbnail-box {
+    height: auto;
+  }
+}
+
+@media(max-width: 500px){
+  .work-thumbnail-box {
+    height: calc(30vw + 10px);
+  }
 }
 
 
@@ -52,24 +69,40 @@
   display: flex;
   justify-content: flex-start;
   height: 230px;
-  /* width: auto; */
-  position: relative;
   right: 50px;
-  opacity: .7;
-  
-}
-.work-thumbnail-box img:hover {
-  transform: scale(1.10);
-  transition: 0.3s;
-  opacity: 1;
-  /* filter: blur(1px); */
 }
 
-.work-thumbnail-box:hover {
-  /* border-bottom: 2px solid #ff00ff; */
-  transform: scale(1.05);
+.slick-slide img {
+  opacity: 0.2;
+}
+
+
+.slick-slide.slick-active.slick-center.slick-current img {
+  opacity: 1.0;
+}
+
+.slick-slide.slick-active.slick-center.slick-current .work-thumbnail-box{
+  /* box-shadow: 10px 10px 10px #B415FF; */
+}
+
+.slick-slide.slick-active.slick-center.slick-current h3.project-title {
+  opacity: 1;
+  transition: 0.8s;
+}
+
+.work-thumbnail-box img:hover {
   transition: 0.3s;
-  
+  opacity: 1;
+  overflow: hidden;
+}
+
+.slick-slide.slick-active.slick-center.slick-current .work-thumbnail-box img:hover {
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.slick-slide:not(.slick-active) {
+  opacity: 0;
 }
 
 .work-thumbnail-box img:hover {
@@ -79,10 +112,7 @@
 
 }
 
-/* h3.project-title {
-  display: none;
-  margin-top: -10px;
-} */
+
 h3.project-title {
   /* display: unset; */
   opacity: 0;
@@ -96,11 +126,19 @@ h3.project-title {
   font-weight: 500;
   font-family: Roboto;
   text-decoration: none;
+  padding-left: 5px;
+}
+
+@media (max-width: 740px){
+  h3.project-title {
+    font-size: 16px;
+  }
 }
 
 
 .thumbnail-and-caption:hover h3 {
   opacity: 1;
+  transition: 0.3s;
   /* padding-top: 50px;
   padding-left: 50px;
   transition: 0.4s; */
@@ -148,11 +186,19 @@ h3.project-title {
   color: white;
 }
 
+
 ul.slick-dots {
   margin-top: -5px;
   position: relative;
 }
 
-.slick-next {
-  right: 2px;
+.slick-track {
+  display: flex;
+  gap: 0px;
 }
+
+/* .work-thumbnail-box {
+  border: 1px solid blue;
+} */
+
+
