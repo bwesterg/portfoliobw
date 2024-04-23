@@ -11,19 +11,19 @@ const About = () => {
   return (
     <div id="about" className='about'>
       <div className="about-title">
-        <h2>About me</h2>
+        <h2>About Me</h2>
         <img src={theme_pattern} alt=""/>
       </div>
       <div className="about-para">
         <p>Experienced Full Stack Developer with additional background in continuing education project management, healthcare research, public health surveillance, and exercise physiology.</p>
         <p>Seeking opportunities to build cool stuff.</p>
       </div>
-      <div className='about-sections'>
-        <div className="about-graphic">
+      <div className='about-sections container'>
+        <div className="about-graphic-desktop">
           <div className="stage-cube-cont">
             <div className="cubespinner">
               <div className="face1">
-                <FontAwesomeIcon icon={faHtml5} color="#DD0031" />
+                <FontAwesomeIcon icon={faHtml5} color="#DD0031"/>
               </div>
               <div className="face2">
                 <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
@@ -39,6 +39,30 @@ const About = () => {
               </div>
               <div className="face6">
                 <FontAwesomeIcon icon={faNodeJs} color="green"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="about-graphic-mobile">
+          <div className="stage-cube-cont-mobile">
+            <div className="cubespinner">
+              <div className="face1">
+                <FontAwesomeIcon icon={faHtml5} color="#DD0031" width="70%"/>
+              </div>
+              <div className="face2">
+                <FontAwesomeIcon icon={faCss3} color="#28A4D9" width="70%"/>
+              </div>
+              <div className="face3">
+                <FontAwesomeIcon icon={faReact} color="#5ED4F4" width="70%"/>
+              </div>
+              <div className="face4">
+                <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" width="70%"/>
+              </div>
+              <div className="face5">
+                <FontAwesomeIcon icon={faNpm} color="orange" width="72.5%"/>
+              </div>
+              <div className="face6">
+                <FontAwesomeIcon icon={faNodeJs} color="green" width="70%"/>
               </div>
             </div>
           </div>
