@@ -197,8 +197,26 @@ ul.slick-dots {
   gap: 0px;
 }
 
-/* .work-thumbnail-box {
-  border: 1px solid blue;
+
+
+/* button.slick-arrow.slick-next::before,
+button.slick-arrow.slick-prev::before {
+  background: linear-gradient(270deg, #DF8908 60%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
 } */
 
 
+
+
+
+/* .slick-prev:before {
+  content: "<";
+  color: red;
+  font-size: 30px;
+} */
+
+/* background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
