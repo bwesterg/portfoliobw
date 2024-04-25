@@ -104,7 +104,7 @@
 }
 
 .contact-right textarea {
-  width: 95%;
+  width: 97%;
   border: none;
   padding: 15px;
   border-radius: 4px;
@@ -196,12 +196,12 @@
   }
 
   .contact-right input {
-    width: 100%;
+    width: 97%;
     font-size: 16px;
   }
 
   .contact-right textarea {
-    width: 95%;
+    width: 92%;
     font-size: 20px;
   }
 

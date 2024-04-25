@@ -8,20 +8,32 @@ import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 import WorkSlider from './Components/WorkSlider/WorkSlider';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Resume from './pages/Resume';
+import Home from './pages/Home';
+
 const App = () => {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <About />
-      {/* <Services /> */}
-      {/* <MyWork /> */}
       <WorkSlider />
       <Contact />
-      <Footer />
+      <Footer /> */}
+      {/* <Services /> */}
+      {/* <MyWork /> */}
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/resume" element={<Resume />}/>
+        </Routes>
+      </BrowserRouter>
+
 
     </div>
   )
 }
 
-export default App
+export default App;
