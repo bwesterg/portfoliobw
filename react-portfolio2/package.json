@@ -21,6 +21,7 @@
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^18.2.0",
     "react-jquery-plugin": "^1.1.7",
+    "react-router-dom": "^6.23.0",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1"
   },
