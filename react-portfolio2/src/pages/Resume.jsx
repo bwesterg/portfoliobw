@@ -24,135 +24,174 @@ const Resume = () => {
   return (
     <>
       <Navbar />
-      <div id="resume-home" className='resume'>
-        <div className="image-and-name">
-          <div className="resume-image">
-            <img src={BW_profile} />
-          </div>
-          <div className="namebox">
-            <h1>
-              <span>
-                Benton Westergaard<br /> 
-              </span>
-            </h1>
-            <p>
-              Full Stack Developer in Boulder, Colorado
-            </p>
-            <div className="resume-action">
-              <div className="resume-connect">
-              <AnchorLink className='anchor-link' offset={50} href='#contact'>
-                Connect with me
-              </AnchorLink>
+      <div className="resume-page-container">
+        <div id="resume-home" className='resume'>
+          <div className="image-and-name">
+            <div className="resume-image">
+              <img src={BW_profile} />
+            </div>
+            <div className="namebox">
+              <h1>
+                <span>
+                  Benton Westergaard<br /> 
+                </span>
+              </h1>
+              <p>
+                Full Stack Developer in Boulder, Colorado
+              </p>
+              <div className="resume-action">
+                <div className="resume-connect">
+                <AnchorLink className='anchor-link' offset={50} href='#contact'>
+                  Connect with me
+                </AnchorLink>
+                </div>
+                <div className="resume-resume" onClick={handleDownload}>My resume</div>
               </div>
-              <div className="resume-resume" onClick={handleDownload}>My resume</div>
             </div>
           </div>
         </div>
-        <div className="resume-text">
-          <h3 className="resume-section">Experience</h3>
-          <h4>Jr Web Developer, Black Dog Digital Agency - Denver, CO | Oct, 2021 - Apr, 2023</h4>
-          <div className="BLKDG-description">
-            <ul>
-              <li>Developed, updated, and maintained full stack web applications using Node, PHP, SQL, CSS, JavaScript, jQuery, Liquid, React, TypeScript, and Git / GitHub source control.</li>
-              <li>Extensive usage of modern CSS, preprocessors (SASS, LESS), and CSS libraries (Bootstrap, Tailwind).</li>
-              <li>Implemented common build tools / bundlers (Grunt, Gulp, Laravel, NPM, Vite, Webpack), and tested server- and client-side JavaScript code.</li>
-              <li>Implemented web component libraries (Web Components, Material UI, React-Bootstrap, etc.).</li>
-              <li>Tested projects and websites for WCAG 2.0 508 compliance and engineered updates.</li>
-              <li>Collaborated with UI/UX Designers and Project Managers to develop, test, and iterate upon dynamic user features, incorporating feedback for continuous improvement.</li>
-              <li>Participated in Agile and CI/CD workflows, contributing to code reviews, meetings and cycles.</li>
-            </ul>
-          </div>
-          <h4>Project Manager, University of CO School of Pharmacy - Aurora, CO	| 10 Years, 2 Months</h4>
-          <div className="SOP-description">
-            <ul>
-              <li>Managed continuing education projects, accreditation, accounting, and data analysis.</li>
-              <li>Cultivated University relationships and negotiated arranged accreditation services for international partners in Australia, Canada, Egypt, and UAE.</li>
-              <li>Drafted, edited, managed, and routed contracts / Request for Proposals (RFPs).</li>
-              <li>Directed automation of online credit distribution system and data management functions.</li>
-              <li>Authored comprehensive ACPE reaccreditation reports (2012, 2018) resulting in successful reaccreditation with commendation.</li>
-              <li>Expanded office revenue 5x and participation 10x.</li>
-              <li>Analyzed participation results and feedback, and guided instructors on educational content structure, evaluation, and learning assessment.</li>
-            </ul>
-          </div>
-          <h4>Research Assistant, Denver Health & Hospital Authority - Denver, CO | Jan, 2007 - Oct, 2009</h4>
-          <div className="DHHA-description">
-            <ul>
-              <li>Managed continuing education projects, accreditation, accounting, and data analysis.</li>
-              <li>Cultivated University relationships and negotiated arranged accreditation services for international partners in Australia, Canada, Egypt, and UAE.</li>
-              <li>Drafted, edited, managed, and routed contracts / Request for Proposals (RFPs).</li>
-              <li>Directed automation of online credit distribution system and data management functions.</li>
-              <li>Authored comprehensive ACPE reaccreditation reports (2012, 2018) resulting in successful reaccreditation with commendation.</li>
-              <li>Expanded office revenue 5x and participation 10x.</li>
-              <li>Analyzed participation results and feedback, and guided instructors on educational content structure, evaluation, and learning assessment.</li>
-            </ul>
-          </div>
-          
-          {/* <h3>Selected Accomplishments</h3>
-          <h3>Publications</h3> */}
-
-          <h3 className="resume-section">Education</h3>		
-            <div className="education-list">
-              <h4>Certificate,  Full Stack Software Engineering, Flatiron School - Denver, CO | Dec, 2020 - May, 2021</h4>
+            {/* <div className="downloadable-resume" onClick={handleDownload}>Downloadable Resume</div> */}
+          <div className="resume-text">
+            <div className="resume-section">
+              <h3 className="resume-section-title">Experience</h3>
+              <h4>Jr Web Developer, Black Dog Digital Agency - Denver, CO | Oct, 2021 - Apr, 2023</h4>
+              <div className="BLKDG-description">
+                <ul>
+                  <li>Developed, updated, and maintained full stack web applications using Node, PHP, SQL, CSS, JavaScript, jQuery, Liquid, React, TypeScript, and Git / GitHub source control.</li>
+                  <li>Extensive usage of modern CSS, preprocessors (SASS, LESS), and CSS libraries (Bootstrap, Tailwind).</li>
+                  <li>Implemented common build tools / bundlers (Grunt, Gulp, Laravel, NPM, Vite, Webpack), and tested server- and client-side JavaScript code.</li>
+                  <li>Implemented web component libraries (Web Components, Material UI, React-Bootstrap, etc.).</li>
+                  <li>Tested projects and websites for WCAG 2.0 508 compliance and engineered updates.</li>
+                  <li>Collaborated with UI/UX Designers and Project Managers to develop, test, and iterate upon dynamic user features, incorporating feedback for continuous improvement.</li>
+                  <li>Participated in Agile and CI/CD workflows, contributing to code reviews, meetings and cycles.</li>
+                </ul>
+              </div>
+              <h4>Project Manager, University of CO School of Pharmacy - Aurora, CO	| 10 Years, 2 Months</h4>
+              <div className="SOP-description">
+                <ul>
+                  <li>Managed continuing education projects, accreditation, accounting, and data analysis.</li>
+                  <li>Cultivated University relationships and negotiated arranged accreditation services for international partners in Australia, Canada, Egypt, and UAE.</li>
+                  <li>Drafted, edited, managed, and routed contracts / Request for Proposals (RFPs).</li>
+                  <li>Directed automation of online credit distribution system and data management functions.</li>
+                  <li>Authored comprehensive ACPE reaccreditation reports (2012, 2018) resulting in successful reaccreditation with commendation.</li>
+                  <li>Expanded office revenue 5x and participation 10x.</li>
+                  <li>Analyzed participation results and feedback, and guided instructors on educational content structure, evaluation, and learning assessment.</li>
+                </ul>
+              </div>
+              <h4>Research Assistant, Denver Health & Hospital Authority - Denver, CO | Jan, 2007 - Oct, 2009</h4>
+              <div className="DHHA-description">
+                <ul>
+                  <li>Managed continuing education projects, accreditation, accounting, and data analysis.</li>
+                  <li>Cultivated University relationships and negotiated arranged accreditation services for international partners in Australia, Canada, Egypt, and UAE.</li>
+                  <li>Drafted, edited, managed, and routed contracts / Request for Proposals (RFPs).</li>
+                  <li>Directed automation of online credit distribution system and data management functions.</li>
+                  <li>Authored comprehensive ACPE reaccreditation reports (2012, 2018) resulting in successful reaccreditation with commendation.</li>
+                  <li>Expanded office revenue 5x and participation 10x.</li>
+                  <li>Analyzed participation results and feedback, and guided instructors on educational content structure, evaluation, and learning assessment.</li>
+                </ul>
+              </div>
+              <h3 className="resume-section-title">Education</h3>
+              <h4>Certificate, Full Stack Software Engineering, Flatiron School - Denver, CO | Dec, 2020 - May, 2021</h4>
               <h4>BS, Integrative Physiology, University of Colorado - Boulder, CO | Aug, 2002 - May, 2006</h4>
-            </div>										      
-          
-          <h3 className="resume-section">Projects</h3>
-            <div className="projects-list">
-              <h4>HappyEats Food Ordering Service</h4>
+              <div className="education-description">
                 <ul>
-                    <li>Deployed MERN app (MongoDB, Express, React, Node)</li>
-                    <li>Incorporates Auth0, AWS, Cloudinary, JavaScript, ShadCN Component Libraries, RESTful API consumption, Render, Stripe Payments, Tailwind, Toast Notifications, TypeScript.</li>
-                  </ul>
-                <p>
-                  <a href="https://happy-eats-frontend.onrender.com/" target="_blank">
-                    https://happy-eats-frontend.onrender.com/
-                  </a>
-                </p>
-                <p>
-                  <a href="https://github.com/bwesterg/happy_eats_frontend" target="_blank">
-                    Frontend (GitHub)
-                  </a>
-                </p>
-                <p>
-                  <a href="https://github.com/bwesterg/happy_eats_backend" target="_blank">
-                    Backend (GitHub)
-                  </a>
-                </p>
-              <h4>OAuth Ski Collection App</h4>
-                <ul>
-                  <li>
-                    Full stack, React app to manage user ski collections. Includes JWT encryption, OAuth, Ruby on Rails, SQL, CSS, HTML, and JavaScript.
-                  </li>
-                </ul>
-                <p>
-                  <a href="https://github.com/bwesterg/Ruby_React_Assessment" target="_blank">
-                    Front/Backend (GitHub)
-                  </a>
-                </p>
-
-                <h4>Golf Score App</h4>
-                <ul>
-                  <li>
-                    Full stack, React app for managing golf scorecards. Utilizes React, hooks, Ruby on Rails, SQL, JavaScript, CSS, and HTML.
-                  </li>
-                </ul>
-                <p>
-                  <a href="https://github.com/bwesterg/Golf-Score" target="_blank">
-                    Front/Backend (GitHub)
-                  </a>
-                </p>
-            </div>
+                  <li>Dean’s list; Kittredge Honors Program; Cycling Club Officer</li>
          
-          <h3 className="resume-section">Technical Skills</h3>
-            <p>Accessibility, Agile Workflows, Auth0, Bootstrap, CSS3, Docker, E-Commerce, ECMAScript, ES6, Express, Git, GitHub, GraphQL, Grunt, Gulp, Heroku, HTML5, JavaScript, jQuery, JWT Encryption, Liquid, Material-UI, MongoDB, Multer, MVC Architecture, Mongoose, MySQL, NPM, Node, PHP, Playwright, PostgreSQL, React, RESTful API design, Ruby, Rails, SaaS, SASS, SCSS, SCRUM, Selenium, SharePoint, Shopify, SQLite, Tailwind, Test-Driven Development, TypeScript, Webpack, WordPress</p>
+                </ul>
+              </div>
+          
+              <h3 className="resume-section-title">Projects</h3>
+              <h4>HappyEats Food Ordering Service</h4>
+              <ul>
+                <li>Deployed MERN app (MongoDB, Express, React, Node)</li>
+                <li>Incorporates Auth0, AWS, Cloudinary, JavaScript, ShadCN Component Libraries, RESTful API consumption, Render, Stripe Payments, Tailwind, Toast Notifications, TypeScript.</li>
+                <li>
+                  <p>
+                    <a href="https://happy-eats-frontend.onrender.com/" target="_blank">
+                      https://happy-eats-frontend.onrender.com/
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://github.com/bwesterg/happy_eats_frontend" target="_blank">
+                      Frontend (GitHub)
+                    </a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="https://github.com/bwesterg/happy_eats_backend" target="_blank">
+                      Backend (GitHub)
+                    </a>
+                  </p>
+                </li>
+              </ul>
+              <h4>OAuth Ski Collection App</h4>
+              <ul>
+                <li>
+                  Full stack, React app to manage user ski collections. Includes JWT encryption, OAuth, Ruby on Rails, SQL, CSS, HTML, and JavaScript.
+                </li>
+                <li>
+                  <p>
+                    <a href="https://github.com/bwesterg/Ruby_React_Assessment" target="_blank">
+                      Front/Backend (GitHub)
+                    </a>
+                  </p>
+                </li>
+              </ul>
+              <h4>Golf Score App</h4>
+              <ul>
+                <li>
+                  Full stack, React app for managing golf scorecards. Utilizes React, hooks, Ruby on Rails, SQL, JavaScript, CSS, and HTML.
+                </li>
+                <li>
+                  <p>
+                    <a href="https://github.com/bwesterg/Golf-Score" target="_blank">
+                      Front/Backend (GitHub)
+                    </a>
+                  </p>
+                </li>
+              </ul>
+              
+            <h3 className="resume-section-title">Technical Skills</h3>
+            <div className="tech-skills">
 
-          <h3 className="resume-section">General Skills</h3>
+              <div className="tech-skills-col-left">
+                <span>
+                  Accessibility, Agile Workflows, Auth0, Bootstrap, CSS3, Docker, E-Commerce, ECMAScript, ES6, Express, Git, GitHub, GraphQL, Grunt, Gulp, Heroku, HTML5, JavaScript, jQuery, JWT Encryption, Liquid, Material-UI, MongoDB, Multer, MVC Architecture, Mongoose, MySQL, 
+                </span>
+              </div>
+              <div className="tech-skills-col-right">
+                <span>
+                  NPM, Node, PHP, Playwright, PostgreSQL, React, RESTful API design, Ruby, Rails, SaaS, SASS, SCSS, SCRUM, Selenium, SharePoint, Shopify,SQLite, Tailwind, Test-Driven Development, TypeScript, Webpack, WordPress
+
+                </span>
+                
+              </div>
+            </div>
+
+            <p>Accessibility, Agile Workflows, Auth0, Bootstrap, CSS3, Docker, E-Commerce, ECMAScript, ES6, Express, Git, GitHub, GraphQL, Grunt, </p>
+            <p>Gulp, Heroku, HTML5, JavaScript, jQuery, JWT Encryption, Liquid, Material-UI, MongoDB, Multer, MVC Architecture, Mongoose, MySQL, </p>
+            <p>NPM, Node, PHP, Playwright, PostgreSQL, React, RESTful API design, Ruby, Rails, SaaS, SASS, SCSS, SCRUM, Selenium, SharePoint, Shopify, </p>
+            <p>SQLite, Tailwind, Test-Driven Development, TypeScript, Webpack, WordPress</p>
+            <h3 className="resume-section-title">General Skills</h3>
             <p>Accounting, Accreditation, Committee Management, FDA Regulated Research, Event Management, Healthcare, Higher Education, HIPAA Compliance, IRB consultancy, Leadership, Management, Market Research, Procurement, Project Management, Public Health, SalesForce, Statistics</p>
+            </div>
+           
+           
 
-        </div>
+              
+           
+            
+            
+
+          
+
+          </div>
+
+        <Contact />
       </div>
-
-      <Contact />
       <Footer />
     </>
   )
