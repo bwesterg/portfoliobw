@@ -223,6 +223,12 @@
   flex-direction: column;
 }
 
+@media (max-width: 767px) {
+  .resume-text {
+    margin: 20px 80px;
+  }
+}
+
 .resume-text .BLKDG-description,
 .resume-text .SOP-description,
 .resume-text .DHHA-description,
@@ -268,6 +274,88 @@ h3.resume-section-title {
 
 }
 
-li {
-  margin-left: 50px;
+div.tech-skills {
+  max-height: 300px;
+  overflow-y: auto; 
+  overflow-x: hidden;
+}
+
+div.tech-skills {
+  --scrollbar-thumb-color: #B415FF;
+  --scrollbar-track-color: #f4f4f4; 
+}
+
+::-webkit-scrollbar {
+  width: 5px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
+}
+
+ul.mapped-skillslist {
+  display: grid;
+  grid-template-columns:  repeat(auto-fit, minmax(140px, 2fr));
+  gap: 1px;
+  max-height: fit-content;
+  overflow-y: auto; 
+  list-style-type: none;
+  overflow-x: hidden;
+}
+
+ul.mapped-skillslist li {
+  font-size: 14px;
+  text-align: left;
+  transition: transform .2s;
+  padding-left: 5px;
+}
+
+ul.mapped-skillslist li:hover {
+  transform: scale(1.2);
+  color: #FFFFFF;
+  cursor:crosshair;
+}
+
+@media (max-width: 450px) {
+  ul.mapped-skillslist li {
+    text-align: center;
+  }
+
+  h3.resume-section-title {
+    text-align: center;
+  }
+}
+
+a {
+  color: #B415FF;
+}
+
+.resume-text .BLKDG-description,
+.resume-text .SOP-description,
+.resume-text .DHHA-description,
+.resume-text .education-description,
+.resume-text .project-description {
+  --scrollbar-thumb-color: #B415FF;
+  --scrollbar-track-color: #f4f4f4; 
+  max-height: 100px;
+  overflow-y: auto;
+  margin-bottom: 5vh;
+}
+
+::-webkit-scrollbar {
+  width: 5px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color); 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
 }

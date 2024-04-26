@@ -7,6 +7,7 @@ import Footer from '../Components/Footer/Footer';
 import './Resume.css';
 import BW_profile from "../assets/BW_profile.jpg";
 import BW_Resume from "../assets/Benton_Westergaard_Resume_2024.pdf";
+import {techSkills_data, genSkills_data} from '../assets/myskills_data';
 
 
 const Resume = () => {
@@ -153,41 +154,29 @@ const Resume = () => {
                   </p>
                 </li>
               </ul>
-              
+              </div>
             <h3 className="resume-section-title">Technical Skills</h3>
             <div className="tech-skills">
-
-              <div className="tech-skills-col-left">
-                <span>
-                  Accessibility, Agile Workflows, Auth0, Bootstrap, CSS3, Docker, E-Commerce, ECMAScript, ES6, Express, Git, GitHub, GraphQL, Grunt, Gulp, Heroku, HTML5, JavaScript, jQuery, JWT Encryption, Liquid, Material-UI, MongoDB, Multer, MVC Architecture, Mongoose, MySQL, 
-                </span>
-              </div>
-              <div className="tech-skills-col-right">
-                <span>
-                  NPM, Node, PHP, Playwright, PostgreSQL, React, RESTful API design, Ruby, Rails, SaaS, SASS, SCSS, SCRUM, Selenium, SharePoint, Shopify,SQLite, Tailwind, Test-Driven Development, TypeScript, Webpack, WordPress
-
-                </span>
-                
-              </div>
+              <ul className="mapped-skillslist">
+                {techSkills_data.map((skill_name, index)=>(
+                  <li key={index}>{skill_name.skill}</li>
+                ))}
+              </ul>
             </div>
 
-            <p>Accessibility, Agile Workflows, Auth0, Bootstrap, CSS3, Docker, E-Commerce, ECMAScript, ES6, Express, Git, GitHub, GraphQL, Grunt, </p>
-            <p>Gulp, Heroku, HTML5, JavaScript, jQuery, JWT Encryption, Liquid, Material-UI, MongoDB, Multer, MVC Architecture, Mongoose, MySQL, </p>
-            <p>NPM, Node, PHP, Playwright, PostgreSQL, React, RESTful API design, Ruby, Rails, SaaS, SASS, SCSS, SCRUM, Selenium, SharePoint, Shopify, </p>
-            <p>SQLite, Tailwind, Test-Driven Development, TypeScript, Webpack, WordPress</p>
             <h3 className="resume-section-title">General Skills</h3>
-            <p>Accounting, Accreditation, Committee Management, FDA Regulated Research, Event Management, Healthcare, Higher Education, HIPAA Compliance, IRB consultancy, Leadership, Management, Market Research, Procurement, Project Management, Public Health, SalesForce, Statistics</p>
+            <div className="gen-skills">
+              <ul className="mapped-skillslist">
+              {genSkills_data
+                .slice() 
+                .sort((a, b) => a.skill.localeCompare(b.skill)) 
+                .map((skill_name, index) => (
+                  <li key={index}>{skill_name.skill}</li>
+                ))}
+              </ul>
             </div>
-           
-           
-
               
-           
             
-            
-
-          
-
           </div>
 
         <Contact />
