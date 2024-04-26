@@ -188,11 +188,15 @@
 
 }
 
-.resume-resume {
+.resume-resume, .downloadable-resume{
   padding: 15px 35px;
   border-radius: 50px;
   border: 2px solid #FFFFFF;
   cursor: pointer;
+}
+
+.downloadable-resume {
+  width: 25%;
 }
 
 .resume-resume:hover{
@@ -214,19 +218,26 @@
 }
 
 .resume-text {
-  margin: 40px 100px;
+  margin: 20px 170px;
+  display: flex;
+  flex-direction: column;
 }
 
 .resume-text .BLKDG-description,
 .resume-text .SOP-description,
 .resume-text .DHHA-description,
-.resume-text .education-list,
-.resume-text .project-list {
+.resume-text .education-description,
+.resume-text .project-description {
   padding: 10px 30px;
 }
 
+.skills-list {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
 .resume-text h3 {
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 24px;
 }
 
@@ -236,7 +247,7 @@
 }
 
 .resume-text li {
-  font-family: Roboto;
+  font-family: 'Roboto';
   font-size: 16px;
 }
 
@@ -247,7 +258,16 @@
   line-height: 1.5;
 }
 
-h3.resume-section {
+h3.resume-section-title {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.resume-section {
+  margin: 0 auto;
+
+}
+
+li {
+  margin-left: 50px;
 }
