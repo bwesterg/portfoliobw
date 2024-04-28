@@ -5,6 +5,7 @@ import About from '../Components/About/About';
 import WorkSlider from '../Components/WorkSlider/WorkSlider';
 import Contact from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Footer';
+import Resume from '../pages/Resume';
 
 
 const Home = () => {
