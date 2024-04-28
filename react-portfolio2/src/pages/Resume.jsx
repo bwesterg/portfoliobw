@@ -46,7 +46,7 @@ const Resume = () => {
                   Connect with me
                 </AnchorLink>
                 </div>
-                <div className="resume-resume" onClick={handleDownload}>My resume</div>
+                <div className="resume-resume" onClick={handleDownload}>Downloadable resume</div>
               </div>
             </div>
           </div>
@@ -55,7 +55,7 @@ const Resume = () => {
           <div className="resume-text">
             <div className="resume-section">
               <h3 className="resume-section-title">Experience</h3>
-              <h4>Jr Web Developer, Black Dog Digital Agency - Denver, CO | Oct, 2021 - Apr, 2023</h4>
+              <h4>Jr Web Developer<span className="position-details">, Black Dog Digital Agency - Denver, CO | Oct, 2021 - Apr, 2023</span></h4>
               <div className="BLKDG-description">
                 <ul>
                   <li>Developed, updated, and maintained full stack web applications using Node, PHP, SQL, CSS, JavaScript, jQuery, Liquid, React, TypeScript, and Git / GitHub source control.</li>
@@ -67,7 +67,7 @@ const Resume = () => {
                   <li>Participated in Agile and CI/CD workflows, contributing to code reviews, meetings and cycles.</li>
                 </ul>
               </div>
-              <h4>Project Manager, University of CO School of Pharmacy - Aurora, CO	| 10 Years, 2 Months</h4>
+              <h4>Project Manager<span className="position-details">, University of CO School of Pharmacy - Aurora, CO	| 10 Years, 2 Months</span></h4>
               <div className="SOP-description">
                 <ul>
                   <li>Managed continuing education projects, accreditation, accounting, and data analysis.</li>
@@ -79,7 +79,7 @@ const Resume = () => {
                   <li>Analyzed participation results and feedback, and guided instructors on educational content structure, evaluation, and learning assessment.</li>
                 </ul>
               </div>
-              <h4>Research Assistant, Denver Health & Hospital Authority - Denver, CO | Jan, 2007 - Oct, 2009</h4>
+              <h4>Research Assistant<span className="position-details">, Denver Health & Hospital Authority - Denver, CO | Jan, 2007 - Oct, 2009</span></h4>
               <div className="DHHA-description">
                 <ul>
                   <li>Managed continuing education projects, accreditation, accounting, and data analysis.</li>
@@ -92,69 +92,92 @@ const Resume = () => {
                 </ul>
               </div>
               <h3 className="resume-section-title">Education</h3>
-              <h4>Certificate, Full Stack Software Engineering, Flatiron School - Denver, CO | Dec, 2020 - May, 2021</h4>
-              <h4>BS, Integrative Physiology, University of Colorado - Boulder, CO | Aug, 2002 - May, 2006</h4>
-              <div className="education-description">
-                <ul>
-                  <li>Dean’s list; Kittredge Honors Program; Cycling Club Officer</li>
-         
-                </ul>
+              <div className="education-section">
+                <h4><span className="education-ital">Certificate, Full Stack Software Engineering</span>, Flatiron School, Denver, CO</h4>
+                <div className="school-description">
+                  <ul className="school-details-list">
+                    <li>
+                      <span className="school-dates">Dec, 2020 - May, 2021</span>
+                    </li>
+                  </ul>
+                </div>
+                <h4><span className="education-ital">BS Integrative Physiology</span>, University of Colorado, Boulder, CO</h4>
+                <div className="school-description">
+                  <ul className="school-details-list">
+                    <li>
+                      <span className="school-dates">Aug, 2002 - May, 2006</span>
+                    </li>
+                    <li>
+                      <span className="school-dates">Dean’s list; Kittredge Honors Program; Cycling Club Officer</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
+              
           
               <h3 className="resume-section-title">Projects</h3>
-              <h4>HappyEats Food Ordering Service</h4>
-              <ul>
-                <li>Deployed MERN app (MongoDB, Express, React, Node)</li>
-                <li>Incorporates Auth0, AWS, Cloudinary, JavaScript, ShadCN Component Libraries, RESTful API consumption, Render, Stripe Payments, Tailwind, Toast Notifications, TypeScript.</li>
-                <li>
-                  <p>
-                    <a href="https://happy-eats-frontend.onrender.com/" target="_blank">
-                      https://happy-eats-frontend.onrender.com/
-                    </a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="https://github.com/bwesterg/happy_eats_frontend" target="_blank">
-                      Frontend (GitHub)
-                    </a>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <a href="https://github.com/bwesterg/happy_eats_backend" target="_blank">
-                      Backend (GitHub)
-                    </a>
-                  </p>
-                </li>
-              </ul>
-              <h4>OAuth Ski Collection App</h4>
-              <ul>
-                <li>
-                  Full stack, React app to manage user ski collections. Includes JWT encryption, OAuth, Ruby on Rails, SQL, CSS, HTML, and JavaScript.
-                </li>
-                <li>
-                  <p>
-                    <a href="https://github.com/bwesterg/Ruby_React_Assessment" target="_blank">
-                      Front/Backend (GitHub)
-                    </a>
-                  </p>
-                </li>
-              </ul>
-              <h4>Golf Score App</h4>
-              <ul>
-                <li>
-                  Full stack, React app for managing golf scorecards. Utilizes React, hooks, Ruby on Rails, SQL, JavaScript, CSS, and HTML.
-                </li>
-                <li>
-                  <p>
-                    <a href="https://github.com/bwesterg/Golf-Score" target="_blank">
-                      Front/Backend (GitHub)
-                    </a>
-                  </p>
-                </li>
-              </ul>
+              <div className="personal-projects-section">
+                <h4>HappyEats Food Ordering Service</h4>
+                <div className="projects-section-description">
+                  <ul>
+                    <li>Deployed MERN app (MongoDB, Express, React, Node)</li>
+                    <li>Incorporates Auth0, AWS, Cloudinary, JavaScript, ShadCN Component Libraries, RESTful API consumption, Render, Stripe Payments, Tailwind, Toast Notifications, TypeScript.</li>
+                    <li>
+                      <p>
+                        <a href="https://happy-eats-frontend.onrender.com/" target="_blank">
+                          https://happy-eats-frontend.onrender.com/
+                        </a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a href="https://github.com/bwesterg/happy_eats_frontend" target="_blank">
+                          Frontend (GitHub)
+                        </a>
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <a href="https://github.com/bwesterg/happy_eats_backend" target="_blank">
+                          Backend (GitHub)
+                        </a>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <h4>OAuth Ski Collection App</h4>
+                <div className="projects-section-description">   
+                  <ul>
+                    <li>
+                      Full stack, React app to manage user ski collections. Includes JWT encryption, OAuth, Ruby on Rails, SQL, CSS, HTML, and JavaScript.
+                    </li>
+                    <li>
+                      <p>
+                        <a href="https://github.com/bwesterg/Ruby_React_Assessment" target="_blank">
+                          Front/Backend (GitHub)
+                        </a>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <h4>Golf Score App</h4>
+                <div className="projects-section-description">
+                  <ul>
+                    <li>
+                      Full stack, React app for managing golf scorecards. Utilizes React, hooks, Ruby on Rails, SQL, JavaScript, CSS, and HTML.
+                    </li>
+                    <li>
+                      <p>
+                        <a href="https://github.com/bwesterg/Golf-Score" target="_blank">
+                          Front/Backend (GitHub)
+                        </a>
+                      </p>
+                    </li>
+                  </ul>
+                </div>  
+                </div>
               </div>
+              
             <h3 className="resume-section-title">Technical Skills</h3>
             <div className="tech-skills">
               <ul className="mapped-skillslist">
