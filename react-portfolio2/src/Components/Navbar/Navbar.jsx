@@ -1,11 +1,9 @@
+// import { Routes, Route } from 'react-router-dom';
+// import AnchorLink from 'react-anchor-link-smooth-scroll';
 import React, { useRef, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
-import Resume from '../../pages/Resume.jsx';
 import './Navbar.css';
-import logo from '../../assets/logo.svg';
 import underline from '../../assets/nav_underline.svg';
-import AnchorLink from 'react-anchor-link-smooth-scroll';
 import menu_open from '../../assets/menu_open.svg';
 import menu_close from '../../assets/menu_close.svg';
 
@@ -13,8 +11,21 @@ import linkedIn from '../../assets/linkedIn_logo.svg';
 import gitHub from '../../assets/github-mark/github-mark-white.png';
 
 
+if(window.location.hash) {
+  window.history.replaceState("", document.title, window.location.pathname);
+}
+
 
 function Navbar() {
+  console.log(window.location.hash);
+  var urlSuffix = window.location.hash.split("#").slice(1);
+  window.location.hash = urlSuffix;
+ 
+  
+  if(window.location.hash) {
+    var urlSuffix = window.location.hash.split("#").slice(1);
+    window.history.replaceState("poo", document.title, urlSuffix);
+  }
 
   const [menu, setMenu] = useState("home");
   const menuReference = useRef();

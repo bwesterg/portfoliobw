@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from "react-slick"; 
-import them_pattern from '../../assets/theme_pattern.svg';
+import theme_pattern from '../../assets/theme_pattern.svg';
 import arrow_icon from '../../assets/arrow_icon.svg';
 import Atticus from '../../assets/AtticusPoetCoffee.png';
 
@@ -86,7 +86,7 @@ const WorkSlider = () => {
       <div className='mywork'>
         <div className="mywork-title">
           <h2>Professional Work</h2>
-          <img src={them_pattern} alt="" />
+          <img src={theme_pattern} alt="" />
         </div>
       </div>
       <div className="slide-container">

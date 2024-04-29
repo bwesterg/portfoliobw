@@ -3,6 +3,7 @@ import Navbar from '../Components/Navbar/Navbar';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Contact from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Footer';
+import theme_pattern from '../assets/theme_pattern.svg';
 
 import './Resume.css';
 import BW_profile from "../assets/BW_profile.jpg";
@@ -54,6 +55,12 @@ const Resume = () => {
             {/* <div className="downloadable-resume" onClick={handleDownload}>Downloadable Resume</div> */}
           <div className="resume-text">
             <div className="resume-section">
+              <div className="myresume">
+                <div className="myresume-title">
+                  <h2>My Resume</h2>
+                  <img src={theme_pattern} alt="" />
+                </div>
+              </div>
               <h3 className="resume-section-title">Experience</h3>
               <h4>Jr Web Developer<span className="position-details">, Black Dog Digital Agency - Denver, CO | Oct, 2021 - Apr, 2023</span></h4>
               <div className="BLKDG-description">
