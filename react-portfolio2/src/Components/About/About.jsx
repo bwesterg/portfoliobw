@@ -4,6 +4,7 @@ import theme_pattern from '../../assets/theme_pattern.svg';
 import BW_profile from "../../assets/BW_profile.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHtml5, faCss3, faReact, faJsSquare, faNpm, faNodeJs } from '@fortawesome/free-brands-svg-icons';
+import { HashLink as Link } from 'react-router-hash-link';
 import node from '../../assets/node.svg';
 import npm from '../../assets/npm.svg';
 
@@ -17,6 +18,10 @@ const About = () => {
       <div className="about-para">
         <p>Experienced Full Stack Developer with additional background in continuing education project management, healthcare research, public health surveillance, and exercise physiology.</p>
         <p>Seeking opportunities to build cool stuff.</p>
+        <Link to="/resume">
+          <p>View my complete resume</p>
+        </Link>
+
       </div>
       <div className='about-sections container'>
         <div className="about-graphic-desktop">

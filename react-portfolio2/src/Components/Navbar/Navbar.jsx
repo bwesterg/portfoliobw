@@ -52,7 +52,7 @@ function Navbar() {
       
         <li>
           <Link className='anchor-link' offset={50} to='/#about'>      
-           <p onClick={()=>setMenu("about")}>About</p>
+           <p onClick={()=>{ setMenu("about"); close_menu() }}>About</p>
           </Link>
           {menu==="about"? <img src={underline} alt=""/>:<></>}
         </li>
@@ -66,13 +66,13 @@ function Navbar() {
 
         <li>
           <Link className='anchor-link' offset={50} to='/#portfolio'>
-            <p onClick={()=>setMenu("portfolio")}>Portfolio</p>
+            <p onClick={()=>{ setMenu("portfolio"); close_menu()}}>Portfolio</p>
           </Link>
           {menu==="portfolio"? <img src={underline} alt=""/>:<></>}
         </li>
         <li>
           <Link className='anchor-link' offset={50} to='/#contact'>
-            <p onClick={()=>setMenu("contact")}>Contact</p>
+            <p onClick={()=>{setMenu("contact"); close_menu()}}>Contact</p>
           </Link>
           {menu==="contact"? <img src={underline} alt=""/>:<></>}
         </li>

@@ -1,8 +1,8 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 20px 170px;
+  justify-content: center;
+  margin: 40px 170px;
 }
 
 .nav-menu {
@@ -11,6 +11,16 @@
   list-style: none;
   gap: 60px;
   font-size: 20px;
+}
+
+@media (max-width: 1095px){
+  .nav-menu {
+    gap: 50px;
+  }
+
+  .navbar {
+    margin: 40px 140px;
+  }
 }
 
 .nav-connect {

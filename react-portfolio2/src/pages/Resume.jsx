@@ -62,34 +62,35 @@ const Resume = () => {
                 </div>
               </div>
               <h3 className="resume-section-title">Experience</h3>
-              <h4>Jr Web Developer<span className="position-details">, Black Dog Digital Agency - Denver, CO | Oct, 2021 - Apr, 2023</span></h4>
+              <h4 className="position-headline">Jr Web Developer<span className="position-details">, Black Dog Digital Agency - Denver, CO | Oct, 2021 - Apr, 2023</span></h4>
               <div className="BLKDG-description">
                 <ul>
-                  <li>Developed, updated, and maintained full stack web applications using Node, PHP, SQL, CSS, JavaScript, jQuery, Liquid, React, TypeScript, and Git / GitHub source control.</li>
+                  <li>Developed, updated, and maintained web applications using CSS, HTML, JavaScript, Node, PHP, SQL, jQuery, Liquid, React, TypeScript, and Git / GitHub source control.</li>
                   <li>Extensive usage of modern CSS, preprocessors (SASS, LESS), and CSS libraries (Bootstrap, Tailwind).</li>
-                  <li>Implemented common build tools / bundlers (Grunt, Gulp, Laravel, NPM, Vite, Webpack), and tested server- and client-side JavaScript code.</li>
+                  <li>Managed build tools, bundlers and web frameworks (Grunt, Gulp, Laravel, NPM, Vite, Webpack).</li>
+                  <li>Integrated AJAX calls and other asynchronous website functionality.</li>
                   <li>Implemented web component libraries (Web Components, Material UI, React-Bootstrap, etc.).</li>
-                  <li>Tested projects and websites for WCAG 2.0 508 compliance and engineered updates.</li>
-                  <li>Collaborated with UI/UX Designers and Project Managers to develop, test, and iterate upon dynamic user features, incorporating feedback for continuous improvement.</li>
-                  <li>Participated in Agile and CI/CD workflows, contributing to code reviews, meetings and cycles.</li>
+                  <li>Tested and updated websites for WCAG 2.0 508 compliance.</li>
+                  <li>Collaborated with UI/UX Designers and Project Managers to develop, test, and iterate upon dynamic user features; incorporating feedback for continuous improvement.</li>
+                  <li>Participated in Agile and CI/CD workflows; contributing to code reviews, meetings and cycles.</li>
                 </ul>
               </div>
-              <h4>Project Manager<span className="position-details">, University of CO School of Pharmacy - Aurora, CO	| 10 Years, 2 Months</span></h4>
+              <h4 className="position-headline">Project Manager<span className="position-details">, University of CO School of Pharmacy - Aurora, CO	| 10 Years, 2 Months</span></h4>
               <div className="SOP-description">
                 <ul>
-                  <li>Managed continuing education projects, accreditation, accounting, and data analysis.</li>
-                  <li>Cultivated University relationships and negotiated arranged accreditation services for international partners in Australia, Canada, Egypt, and UAE.</li>
-                  <li>Drafted, edited, managed, and routed contracts / Request for Proposals (RFPs).</li>
-                  <li>Directed automation of online credit distribution system and data management functions.</li>
-                  <li>Authored comprehensive ACPE reaccreditation reports (2012, 2018) resulting in successful reaccreditation with commendation.</li>
+                  <li>Managed continuing education planning, accreditation, accounting, and data analysis.</li>
+                  <li>Cultivated international partner relationships and accreditation services.</li>
+                  <li>Drafted and managed RFIs, RFQs, RFPs.</li>
+                  <li>Implemented automated online credit distribution system and data management functions.</li>
+                  <li>Authored 2012 and 2018 ACPE reaccreditation reports, each earning 6-year reaccreditation with commendation.</li>
                   <li>Expanded office revenue 5x and participation 10x.</li>
-                  <li>Analyzed participation results and feedback, and guided instructors on educational content structure, evaluation, and learning assessment.</li>
+                  <li>Analyzed participation results and feedback; advised instructors on educational content structure, needs assessment, and integration of learning assessment tools.</li>
                 </ul>
               </div>
-              <h4>Research Assistant<span className="position-details">, Denver Health & Hospital Authority - Denver, CO | Jan, 2007 - Oct, 2009</span></h4>
+              <h4 className="position-headline">Research Assistant<span className="position-details">, Denver Health & Hospital Authority - Denver, CO | Jan, 2007 - Oct, 2009</span></h4>
               <div className="DHHA-description">
                 <ul>
-                  <li>Managed continuing education projects, accreditation, accounting, and data analysis.</li>
+                  <li>Organized and analyzed patient interventions and outreach interventions, ensuring HIPAA and IRB compliance.</li>
                   <li>Cultivated University relationships and negotiated arranged accreditation services for international partners in Australia, Canada, Egypt, and UAE.</li>
                   <li>Drafted, edited, managed, and routed contracts / Request for Proposals (RFPs).</li>
                   <li>Directed automation of online credit distribution system and data management functions.</li>
@@ -115,7 +116,7 @@ const Resume = () => {
                       <span className="school-dates">Aug, 2002 - May, 2006</span>
                     </li>
                     <li>
-                      <span className="school-dates">Dean’s list; Kittredge Honors Program; Cycling Club Officer</span>
+                      <span className="school-dates">Dean's list; Kittredge Honors Program; Cycling Club Officer</span>
                     </li>
                   </ul>
                 </div>
