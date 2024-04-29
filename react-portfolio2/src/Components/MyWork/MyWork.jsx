@@ -24,7 +24,7 @@ const MyWork = () => {
         })}
       </div>
       <div className="mywork-showmore">
-        <p>See More</p>
+        <p>See More</p>chairlift
         <img src={arrow_icon} alt="" />
       </div>
     </div>

@@ -413,3 +413,37 @@ div.tech-skills,
 div.gen-skills {
   margin-bottom: 5vh;
 }
+
+.myresume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  /* margin: 80px 140px; */
+  z-index: -1;
+}
+
+.myresume-title {
+  position: relative;
+}
+
+.myresume-title h2 {
+  padding: 0px 15px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+@media(max-width: 600px){
+  .myresume-title h2 {
+    font-size: 35px !important;
+  }
+}
+
+.myresume-title img {
+  position: absolute;
+  bottom:0;
+  right:0;
+  z-index: -1;
+  max-height: 100px;
+}
