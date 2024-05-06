@@ -45,14 +45,6 @@ const Hero = () => {
             </div>
             <div className="hero-resume" onClick={handleDownload}>My resume</div>
           </div>
-            {/* <div className="connect-box">
-              <div className="linked-in">
-                <img src={linkedIn} alt="linkedIn logo" />
-              </div>
-              <div className="gitHub">
-                <img src={gitHub} alt="gitHub logo" />
-              </div>
-            </div> */}
         </div>
       </div>
     </div>

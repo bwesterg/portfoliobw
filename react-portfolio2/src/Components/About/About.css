@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 80px;
   margin: 80px 140px;
+  padding: 0 20px;
 }
 
 @media(max-width: 613px){
@@ -112,7 +113,7 @@
 @media(max-width: 768px){
   .about-para {
     font-size: 18px;
-    line-height: 32px;
+    /* line-height: 32px; */
   }
 
   div.about-sections {
@@ -540,4 +541,10 @@
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+}
+
+@media (max-width: 352px) {
+  .about-title h2 {
+    font-size: 28px !important;
+  }
 }

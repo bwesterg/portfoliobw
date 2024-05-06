@@ -131,3 +131,8 @@
   z-index: 1;
 }
 
+@media (max-width: 352px) {
+  .my-portfolio .mywork-title h2 {
+    font-size: 28px;
+  }
+}
