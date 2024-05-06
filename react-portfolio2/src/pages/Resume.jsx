@@ -33,7 +33,7 @@ const Resume = () => {
               <img src={BW_profile} />
             </div>
             <div className="namebox">
-              <h1>
+              <h1 className="resume-title">
                 <span>
                   Benton Westergaard<br /> 
                 </span>
@@ -41,13 +41,13 @@ const Resume = () => {
               <p>
                 Full Stack Developer in Boulder, Colorado
               </p>
-              <div className="resume-action">
-                <div className="resume-connect">
+              <div className="hero-action">
+                <div className="hero-connect">
                 <AnchorLink className='anchor-link' offset={50} href='#contact'>
                   Connect with me
                 </AnchorLink>
                 </div>
-                <div className="resume-resume" onClick={handleDownload}>Downloadable resume</div>
+                <div className="hero-resume" onClick={handleDownload}>My resume</div>
               </div>
             </div>
           </div>

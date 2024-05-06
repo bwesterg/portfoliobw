@@ -33,6 +33,12 @@
   }
 }
 
+@media (max-width: 352px) {
+  .mywork-title h2 {
+    font-size: 28px !important;
+  }
+}
+
 .mywork-title img {
   position: absolute;
   bottom: -6px;
