@@ -42,18 +42,18 @@ function Navbar() {
   }
 
   const hash = window.location.hash;
-  console.log(window.location.hash);
+
 
   return (
     <div className='navbar sticky'>
-       <img src={menu_open} onClick={open_menu} alt="menu_open logo" className="nav-mobile-open" />
+      <img src={menu_open} onClick={open_menu} alt="menu_open logo" className="nav-mobile-open" />
       <ul ref={menuReference} className='nav-menu'>
         <img src={menu_close} alt="" onClick={close_menu} className="nav-mobile-close" />
         <li>
           <Link className='anchor-link' to='/home'>            
             <p onClick={()=>setMenu("home")}>Home</p>
-            {useLocation().pathname !== "/resume" && menu==="home" && hash === "" ? <img src={underline} alt=""/>:<></>}
           </Link>
+          {useLocation().pathname !== "/resume" && menu==="home" && hash === "" ? <img src={underline} alt=""/>:<></>}
         </li>
       
         <li>
@@ -77,6 +77,12 @@ function Navbar() {
           {menu==="portfolio" || hash==="#portfolio"? <img src={underline} alt=""/>:<></>}
           {/* {urlSuffix === "portfolio" ? <img src={underline} alt=""/>:<></>} */}
         </li>
+
+        <li onClick={()=>setMenu("photos")}>
+          <Link  to="/photos" offset={50} className='anchor-link'>Photos</Link>
+          {useLocation().pathname === "/photos" ? <img src={underline} alt=""/>:<></>}
+        </li>
+
         <li>
           <Link className='anchor-link' offset={50} to='/#contact'>
             <p onClick={()=>{setMenu("contact"); close_menu()}}>Contact</p>

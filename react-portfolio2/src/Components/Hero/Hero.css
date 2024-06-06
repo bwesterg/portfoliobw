@@ -30,8 +30,8 @@
 }
 
 .hero-image {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   overflow: hidden;
   /* margin-left: 30px; */
   margin-top: 0px;
@@ -41,7 +41,7 @@
 }
 
 .hero-image img {
-  width: 220px;
+  width: 270px;
   height: auto;
   margin: -9px 0 0 -5px;
 }

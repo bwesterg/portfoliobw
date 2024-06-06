@@ -11,6 +11,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Resume from './pages/Resume';
 import Home from './pages/Home';
+import Photos from './pages/Photos';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         <Routes>
           <Route path="*" element={<Home />}/>
           <Route path="/resume/*" element={<Resume />}/>
+          <Route path="/photos/*" element={<Photos />} />
         </Routes>
       </BrowserRouter>
 

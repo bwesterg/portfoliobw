@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './About.css';
 import theme_pattern from '../../assets/theme_pattern.svg';
 import BW_profile from "../../assets/BW_profile.jpg"
@@ -9,6 +9,23 @@ import node from '../../assets/node.svg';
 import npm from '../../assets/npm.svg';
 
 const About = () => {
+
+  // What Javascript statement in place of "?" will make the result always be 
+  // between 6 and 7? 
+  
+  const x = 2; 
+  let y = 4; 
+  function update(arg) { 
+    return Math.random() + y * arg; 
+  } 
+  y = 2; 
+  // ?; 
+  const result = update(x); 
+
+
+
+
+
   return (
     <div id="about" className='about'>
       <div className="about-title">
@@ -28,7 +45,7 @@ const About = () => {
           <div className="stage-cube-cont">
             <div className="cubespinner">
               <div className="face1">
-                <FontAwesomeIcon icon={faHtml5} color="#DD0031"/>
+                <FontAwesomeIcon icon={faHtml5} color="#DD0031" id="face1"/>
               </div>
               <div className="face2">
                 <FontAwesomeIcon icon={faCss3} color="#28A4D9" />

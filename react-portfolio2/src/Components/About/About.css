@@ -380,8 +380,10 @@
       transform: rotateX(-90deg);
     }
   }
-
 }
+
+
+
 
 /* desktop spinner */
 @media (min-width: 769px){

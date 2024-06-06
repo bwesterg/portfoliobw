@@ -213,7 +213,7 @@
 
   .resume-action .resume-connect {
     padding: 10px 20px;
-    width: 50%;
+    width: 70%;
     text-align: center;
   }
 
@@ -253,7 +253,7 @@
 
 
   .resume-image {
-    margin-right: 30px
+    margin-right: 20px
   }
 }
 
@@ -337,6 +337,18 @@
   }
 }
 
+@media (max-width: 390px) {
+  .resume-text {
+    margin: 20px 50px;
+  }
+}
+
+@media (max-width: 300px) {
+  .resume-text {
+    margin: 20px 30px;
+  }
+}
+
 .resume-text .BLKDG-description,
 .resume-text .SOP-description,
 .resume-text .DHHA-description,
@@ -373,6 +385,7 @@
 }
 
 h3.resume-section-title {
+  margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   background: linear-gradient(270deg, #DF8908 90%, #B415FF 100%);
@@ -535,12 +548,33 @@ div.gen-skills {
   .myresume-title h2 {
     font-size: 35px !important;
   }
+
+  .myresume-title img {
+    position: absolute;
+    bottom:0;
+    right: -10px !important;
+    max-height: 100px;
+  }
+}
+
+@media(max-width: 434px){
+  .myresume-title h2 {
+    font-size: 28px !important;
+  }
+
+  .myresume-title img {
+    position: absolute;
+    bottom:0;
+    right:-5px;
+    z-index: -1;
+    max-height: 50px !important;
+  }
 }
 
 .myresume-title img {
   position: absolute;
   bottom:0;
-  right:0;
+  right:-10px;
   z-index: -1;
   max-height: 100px;
 }

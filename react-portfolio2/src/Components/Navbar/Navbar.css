@@ -100,8 +100,8 @@
   }
 
   .nav-menu li {
-    font-size: 30px;
-    padding-left: 100px;
+    font-size: 20px;
+    padding-left: 80px;
     flex-direction: row;
     gap: 20px;
   }
