@@ -47,6 +47,11 @@ const Photos = () => {
     <>
       <Navbar />
       <div className="photos-page-container">
+        <div className="intro-text">
+          Below is a gallery of images taken on my annual bike trip in the Alps.<br/>
+         
+
+        </div>
         <div className="image-grid">
           {imageList.map((image, index)=>
             <>
@@ -79,9 +84,9 @@ const Photos = () => {
             close={()=>setIndex(-1)}
           />
     
-        <Contact />
-        <Footer />
       </div>
+      <Contact />
+      <Footer />
     </>
   )
 }
