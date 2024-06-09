@@ -16,6 +16,7 @@
 @media (max-width: 1095px){
   .nav-menu {
     gap: 50px;
+    font-size: 18px;
   }
 
   .navbar {
@@ -61,7 +62,7 @@
   display: none;
 }
 
-@media(max-width: 768px){
+@media(max-width: 868px){
   .navbar {
     margin: 20px 50px;
   }

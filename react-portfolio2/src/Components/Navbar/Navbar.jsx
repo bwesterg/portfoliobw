@@ -53,7 +53,13 @@ function Navbar() {
           <Link className='anchor-link' to='/home'>            
             <p onClick={()=>setMenu("home")}>Home</p>
           </Link>
-          {useLocation().pathname !== "/resume" && menu==="home" && hash === "" ? <img src={underline} alt=""/>:<></>}
+          {
+            useLocation().pathname !== "/resume" 
+            && useLocation().pathname !== "/photos" 
+            && menu==="home" && hash === "" 
+            ? <img src={underline} alt=""/>
+            :<></>
+          }
         </li>
       
         <li>
