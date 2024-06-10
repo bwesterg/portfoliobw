@@ -55,11 +55,11 @@ const Photos = () => {
         </div>
           {isLoading ? 
             <div className="loading-message">
-              <p>Loading photos...</p>
+              <p>Loading photos...</p><br />
               <p>Using the free versions of Cloudinary
                 and Render. This may take awhile the first time you 
                 visit my photos. Try reloading if you still see this message
-                after 30 seconds</p>
+                after 30 seconds.</p>
             </div>
           : null}
         <div className="image-grid">
@@ -83,7 +83,7 @@ const Photos = () => {
         {isLoading && nextCursor ? 
             <div className="loading-message">
               <p>Loading photos...<br />
-                Using the free versions of Cloudinary and Render. This may take awhile the first time you visit my photos. Try reloading if you still see this message after 30 seconds
+                Using the free versions of Cloudinary and Render. This may take awhile the first time you visit my photos. Try reloading if you still see this message after 30 seconds.
               </p>
             </div>
           : null}
