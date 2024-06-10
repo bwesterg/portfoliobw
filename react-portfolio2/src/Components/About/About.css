@@ -22,7 +22,7 @@
   .about {
     gap: 80px;
     margin: 50px;
-    align-items: start;
+    /* align-items: start; */
   }
 }
 
@@ -138,7 +138,7 @@
   .about-sections-2 .about-achievements{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   .about-sections-2 .about-achievement {
@@ -200,7 +200,7 @@
 
 .about-sections-2 {
   margin-top: 14em;
-  width: 100%;
+  /* width: 100%; */
   justify-content: space-between;
 }
 
@@ -213,7 +213,7 @@
 .about-achievements {
   display: flex;
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 80px;
 }
 
