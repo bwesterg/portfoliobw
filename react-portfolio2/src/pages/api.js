@@ -11,6 +11,8 @@ export const getImages = async (nextCursor) => {
   const response = await fetch(`${API_URL}/photos?${params}`);
   //The first time request runs, params is not included 
   //because the cloudinary api returns the first 10 results.
+
+
   const responseJson = await response.json();
   return responseJson;
 }

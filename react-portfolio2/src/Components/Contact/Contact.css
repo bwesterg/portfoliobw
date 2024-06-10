@@ -145,6 +145,8 @@
     font-weight: 500;
   }
 
+  
+
   .contact-title img {
     bottom: -7px;
     z-index: -1;
@@ -212,5 +214,22 @@
 
   textarea {
     width: 98%;
+  }
+}
+
+@media(max-width: 399px) {
+  .contact-title h2 {
+    font-size: 24px;
+    white-space: nowrap;
+  }
+
+  .contact-title img {
+    bottom: -7px;
+    z-index: -1;
+    max-height: 50px;
+    margin-right: 0;
+    position: absolute;
+    right: -20px;
+    
   }
 }
