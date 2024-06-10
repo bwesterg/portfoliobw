@@ -20,12 +20,14 @@ const Photos = () => {
   const [nextCursor, setNextCursor] = useState(null);
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(-1);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(()=>{
     const fetchData = async() => {
       const responseJson = await getImages();
       setImageList(responseJson.resources);
       setNextCursor(responseJson.next_cursor);
+      setIsLoading(false);
     }
     fetchData();
   },[])
@@ -41,17 +43,25 @@ const Photos = () => {
     setNextCursor(responseJson.next_cursor);
   }
 
+  // console.log(imageList);
+  console.log(isLoading);
 
-  console.log(imageList)
   return (
     <>
       <Navbar />
       <div className="photos-page-container">
         <div className="intro-text">
           Below is a gallery of images taken on my annual bike trip in the Alps.<br/>
-         
-
         </div>
+          {isLoading ? 
+            <div className="loading-message">
+              <p>Loading photos...</p>
+              <p>Using the free versions of Cloudinary
+                and Render. This may take awhile the first time you 
+                visit my photos. Try reloading if you still see this message
+                after 30 seconds</p>
+            </div>
+          : null}
         <div className="image-grid">
           {imageList.map((image, index)=>
             <>
@@ -70,6 +80,13 @@ const Photos = () => {
         <div className="load-more-photos">
           {nextCursor && <button onClick={handleLoadMoreButtonClick}>Load More Images</button>}
         </div>
+        {isLoading && nextCursor ? 
+            <div className="loading-message">
+              <p>Loading photos...<br />
+                Using the free versions of Cloudinary and Render. This may take awhile the first time you visit my photos. Try reloading if you still see this message after 30 seconds
+              </p>
+            </div>
+          : null}
      
           {/* <button onClick={()=>setOpen(true)}>Open Lightbox</button> */}
           <Lightbox 
@@ -82,6 +99,7 @@ const Photos = () => {
             index={index}
             open={index >= 0}
             close={()=>setIndex(-1)}
+            // key={imageList.map((image, index)=>(image.public_id ))}
           />
     
       </div>
