@@ -33,7 +33,7 @@ const About = () => {
         <img src={theme_pattern} alt=""/>
       </div>
       <div className="about-para">
-        <p>Experienced Full Stack Developer with additional background in continuing education project management, healthcare research, public health surveillance, and exercise physiology.</p>
+        <p>Experienced Full Stack Developer with additional background in continuing education, project management, healthcare research, public health surveillance, and exercise physiology.</p>
         <p>Seeking opportunities to build cool stuff.</p>
         <Link to="/resume">
           <p>View my complete resume</p>

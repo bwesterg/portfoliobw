@@ -38,7 +38,7 @@ const WorkSlider = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 1200,
@@ -54,7 +54,7 @@ const WorkSlider = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           centerPadding: '10px',
           centerMode: true,
           slidesToScroll: 1,
