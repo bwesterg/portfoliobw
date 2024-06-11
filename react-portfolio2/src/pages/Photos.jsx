@@ -44,7 +44,7 @@ const Photos = () => {
   }
 
   // console.log(imageList);
-  console.log(isLoading);
+  // console.log(isLoading);
 
   return (
     <>

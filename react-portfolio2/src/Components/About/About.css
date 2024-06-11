@@ -4,14 +4,21 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
-  margin: 80px 140px;
+  margin: 80px 0px;
   padding: 0 20px;
 }
 
-@media(max-width: 613px){
-  #about.about {
-    margin-top: 90px;
+@media (min-width: 500px) {
+  .about {
+    margin: 80px 20px;
   }
+}
+
+#about.about {
+  margin-top: 90px;
+}
+
+@media(max-width: 613px){
 
   .about-sections-2 {
     margin-top: -30px;
@@ -21,7 +28,7 @@
 @media(max-width: 768px){
   .about {
     gap: 80px;
-    margin: 50px;
+
     /* align-items: start; */
   }
 }
@@ -59,25 +66,41 @@
     align-self: center;
   }
 
-  .about-title img {
-    max-height: 100px;
-  }
+  
 }
+
 
 .about-title img {
   position: absolute;
   bottom: 0;
-  right: 0;
+  right: -20px;
+  top: -18px;
   z-index: -1;
-  max-height: 100px;
+  max-height: 60px;
 }
 
-@media(max-width: 768px){
+@media (min-width: 446px){
+  .about-title img {
+    max-height: 100px;
+    top: -28px;
+    right: -30px;
+  }
+}
+
+@media (min-width: 768px){
+  .about-title img {
+    right: 0px;
+    top: -22px
+  }
+}
+
+
+/* @media(max-width: 768px){
   .about-title img {
     right: -29px;
     top: -24px;
   }
-}
+} */
 
 .about-sections {
   display: flex;
@@ -110,6 +133,49 @@
   font-weight: 400;
 }
 
+
+.about .about-sections.container {
+  margin-right: 0;
+}
+
+@media (min-width: 482px) {
+  .about .about-sections.container {
+    margin-right: 70px;
+  }
+}
+
+@media (min-width: 523px) {
+  .about .about-sections.container {
+    margin-right: 50px;
+  }
+}
+
+@media (min-width: 546px) {
+  .about .about-sections.container {
+    margin-right: 23px;
+  }
+}
+
+@media (min-width: 710px) {
+  .about .about-sections.container {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about .about-sections.container {
+    margin-right: 10px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 830px) {
+  .about .about-sections.container {
+    margin-right: 30px;
+  }
+}
+
+
 @media(max-width: 768px){
   .about-para {
     font-size: 18px;
@@ -117,7 +183,8 @@
   }
 
   div.about-sections {
-    margin-top: -40px;
+    margin-top: -10px;
+    margin-right: 20px;
   }
 }
 
