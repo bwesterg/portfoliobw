@@ -157,6 +157,9 @@
     font-weight: 500;
   }
 
+  .contact-left h4 {
+    font-size: 16px;
+  }
   
 
   .contact-title img {
@@ -175,7 +178,7 @@
   }
 
   .contact-left {
-    width: 100%;
+    width: -webkit-fill-available;
     gap: 20px;
   }
 
@@ -197,7 +200,7 @@
   }
 
   .contact-right {
-    width: 100%;
+    width: -webkit-fill-available;
   }
 
   .contact-detail img {
@@ -210,12 +213,12 @@
   }
 
   .contact-right input {
-    width: 97%;
+    width: -webkit-fill-available;
     font-size: 16px;
   }
 
   .contact-right textarea {
-    width: 92%;
+    width: -webkit-fill-available;
     font-size: 20px;
   }
 
@@ -225,7 +228,7 @@
   }
 
   textarea {
-    width: 98%;
+    width: -webkit-fill-available;
   }
 }
 
@@ -243,5 +246,11 @@
     position: absolute;
     right: -20px;
     
+  }
+}
+
+@media (max-width: 400px){
+  .contact-left, .contact-right {
+    padding: 0 10px;
   }
 }
