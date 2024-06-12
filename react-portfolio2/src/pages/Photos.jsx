@@ -60,6 +60,8 @@ const Photos = () => {
                 and Render. This may take awhile the first time you 
                 visit my photos. Try reloading if you still see this message
                 after 30 seconds.</p>
+              
+              <div class="tenor-gif-embed" data-postid="21269167" data-share-method="host" data-aspect-ratio="1.24514" data-width="100%"><a href="https://tenor.com/view/hi-gif-21269167">Hi GIF</a>from <a href="https://tenor.com/search/hi-gifs">Hi GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
             </div>
           : null}
         <div className="image-grid">
