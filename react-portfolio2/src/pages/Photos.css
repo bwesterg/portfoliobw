@@ -1,0 +1,123 @@
+body {
+  margin: 10px 40px;
+}
+
+.photos-page-container {
+  margin: 120px 8% 120px 8%;
+}
+
+@media(max-width: 868px){
+  .photos-page-container {
+    margin: 80px 8% 120px 8%;
+  }
+}
+
+@media(max-width: 549px){
+  .photos-page-container {
+    margin: 80px 8% 120px 8%;
+  }
+}
+
+@media(max-width: 425px){
+  .photos-page-container {
+    margin: 80px 3% 120px 3%;
+  }
+}
+
+.image-grid img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.image-grid .item .innerText {
+  display: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.image-grid .item .innerText:hover {
+  background: linear-gradient(270deg, #DF8908 60%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.image-grid .item:hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+  z-index: 1; /* place it above the image */
+  pointer-events: none;
+}
+
+.image-grid .item:hover .innerText {
+  display: block;
+  z-index: 2; /* place it above the overlay */
+  opacity: 1; /* ensure full opacity */
+}
+
+.image-grid {
+  margin: 2rem auto;
+  overflow: hidden;
+  max-width: 1200px;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  min-width: 240px;
+}
+
+.image-grid .item {
+  position: relative;
+}
+
+.load-more-photos {
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-photos button {
+  cursor: pointer;
+}
+
+.open-lightbox {
+  background-color: aliceblue;
+  height: auto;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.load-more-photos button {
+  padding: 5px 10px;
+  font-size: 20px;
+  background: linear-gradient(270deg, #DF8908 60%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border:none;
+}
+
+.loading-message {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loading-message p {
+  font-size: 20px;
+}
+

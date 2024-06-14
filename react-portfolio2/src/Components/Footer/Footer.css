@@ -1,5 +1,5 @@
 .footer {
-  margin: 50px 170px;
+  margin: 50px 0px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -87,7 +87,7 @@
 
 @media(max-width: 768px) {
   .footer {
-    margin: 50px 70px;
+    margin: 50px 0px;
   }
 
   .footer .footer-top-left p{

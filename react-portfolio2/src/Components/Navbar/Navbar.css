@@ -16,6 +16,7 @@
 @media (max-width: 1095px){
   .nav-menu {
     gap: 50px;
+    font-size: 18px;
   }
 
   .navbar {
@@ -61,7 +62,7 @@
   display: none;
 }
 
-@media(max-width: 768px){
+@media(max-width: 868px){
   .navbar {
     margin: 20px 50px;
   }
@@ -75,6 +76,8 @@
     position: fixed;
     right: 30px;
     top: 30px;
+    z-index: 2;
+    cursor: pointer;
   }
 
   .nav-mobile-close {
@@ -83,6 +86,7 @@
     top: 30px;
     left: 290px;
     width: 30px;
+    cursor: pointer;
   }
 
   .nav-menu {
@@ -100,8 +104,8 @@
   }
 
   .nav-menu li {
-    font-size: 30px;
-    padding-left: 100px;
+    font-size: 20px;
+    padding-left: 80px;
     flex-direction: row;
     gap: 20px;
   }

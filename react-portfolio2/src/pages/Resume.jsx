@@ -42,12 +42,12 @@ const Resume = () => {
                 Full Stack Developer in Boulder, Colorado
               </p>
               <div className="hero-action">
+                <div className="hero-resume" onClick={handleDownload}>My resume</div>
                 <div className="hero-connect">
                 <AnchorLink className='anchor-link' offset={50} href='#contact'>
                   Connect with me
                 </AnchorLink>
                 </div>
-                <div className="hero-resume" onClick={handleDownload}>My resume</div>
               </div>
             </div>
           </div>
