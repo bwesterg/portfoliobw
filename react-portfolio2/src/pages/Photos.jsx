@@ -8,7 +8,7 @@ import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 import 'yet-another-react-lightbox/plugins/captions.css';
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import { Captions, Fullscreen, Thumbnails, Zoom } from 'yet-another-react-lightbox/plugins';
+import { Fullscreen, Thumbnails, Zoom } from 'yet-another-react-lightbox/plugins';
 
 
 import './Photos.css';
@@ -92,7 +92,7 @@ const Photos = () => {
      
           {/* <button onClick={()=>setOpen(true)}>Open Lightbox</button> */}
           <Lightbox 
-            plugins={[Captions, Fullscreen, Zoom, Thumbnails]}
+            plugins={[Fullscreen, Zoom, Thumbnails]}
             captions={{
               showToggle: true,
               descriptionTextAlign: 'end',
